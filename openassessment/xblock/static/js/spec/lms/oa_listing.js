@@ -15,13 +15,12 @@ describe("OpenAssessment.CourseItemsListingView", function() {
             return '/' + handler;
         }
     };
-    var data = {};
 
     window.XBlock = {
         initializeBlock: function(el){}
     };
 
-    var createCourseItemsListingView = function(template) {
+    var createCourseItemsListingView = function(template, data = {}) {
         loadFixtures(template);
 
         section = $('.open-response-assessment-block');
@@ -294,6 +293,40 @@ describe("OpenAssessment.CourseItemsListingView", function() {
             url: testData[0].url_grade_available_responses,
             type: "GET",
             dataType: "json"
+        });
+    });
+
+
+    describe('esg enchanced grade flag', function() {
+        it('is enabled', () => {
+            var data = {
+                CONTEXT: {
+                    ENHANCED_STAFF_GRADER: true,
+                    ORA_GRADING_MICROFRONTEND_URL: 'some_url'
+                }
+            };
+
+            view = createCourseItemsListingView('oa_listing_view.html', data);
+            // Add test data
+            view.oraData = testData;
+            expect(view.data).toEqual(data);
+
+            view.renderGrids(ora2responses);
+
+            var items = $('.esg-link');
+            testData.forEach((testItem, index) => {
+                var item = items[index];
+                expect(item.href).toContain(data.CONTEXT.ORA_GRADING_MICROFRONTEND_URL);
+                expect(item.href).toContain(testItem.id);
+            });
+        });
+
+        it('is not enabled', () => {
+            view.renderGrids(ora2responses);
+
+            var items = $('.esg-link');
+
+            expect(items.length).toEqual(0);
         });
     });
 });

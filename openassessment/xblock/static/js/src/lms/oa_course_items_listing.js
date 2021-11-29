@@ -126,6 +126,39 @@ export class CourseItemsListingView {
         editable: false,
       },
     ];
+
+    const context = this.data.CONTEXT || {};
+
+    const esgEnabled = context.ENHANCED_STAFF_GRADER;
+    const esgUrl = context.ORA_GRADING_MICROFRONTEND_URL;
+
+    if (esgEnabled) {
+      const ResponseCell = Backgrid.UriCell.extend({
+        title: gettext('View and grade responses'),
+        render() {
+          const id = this.model.get('id');
+          let el = null;
+          const url = `${esgUrl}/${id}`;
+          el = $('<a>', {
+            text: this.title,
+            title: this.title,
+            href: url,
+            class: 'esg-link',
+          });
+          this.$el.append(el);
+          return this;
+        },
+      });
+
+      this._columns.push({
+        name: 'response',
+        label: gettext('Response'),
+        label_summary: gettext('Response'),
+        cell: ResponseCell,
+        num: true,
+        editable: false,
+      });
+    }
   }
 
   /* eslint-disable-next-line consistent-return */
