@@ -17,6 +17,11 @@ export class CourseItemsListingView {
       $section.find('.open-response-assessment-msg').show();
     }
 
+    const context = this.data.CONTEXT || {};
+
+    const esgEnabled = context.ENHANCED_STAFF_GRADER;
+    const esgUrl = context.ORA_GRADING_MICROFRONTEND_URL;
+
     const AssessmentCell = Backgrid.UriCell.extend({
       type: null,
       url: null,
@@ -28,6 +33,18 @@ export class CourseItemsListingView {
         const hasAssessmentType = this.model.get(this.type ? this.type : 'staff_assessment');
         let link = null;
         if (itemViewEnabled && (!this.type || (this.type && hasAssessmentType))) {
+          if (esgEnabled) {
+            const id = this.model.get('id');
+            let el = null;
+            el = $('<a>', {
+              text: this.title,
+              title: this.title,
+              href: `${esgUrl}/${id}`,
+              class: 'staff-esg-link',
+            });
+            this.$el.append(el);
+            return this;
+          }
           link = $('<a>', {
             text: formattedValue,
             title: this.title || formattedValue,
@@ -126,11 +143,6 @@ export class CourseItemsListingView {
         editable: false,
       },
     ];
-
-    const context = this.data.CONTEXT || {};
-
-    const esgEnabled = context.ENHANCED_STAFF_GRADER;
-    const esgUrl = context.ORA_GRADING_MICROFRONTEND_URL;
 
     if (esgEnabled) {
       const ResponseCell = Backgrid.UriCell.extend({
