@@ -168,6 +168,7 @@ class StudioMixin:
             'prompts': self.prompts,
             'prompts_type': self.prompts_type,
             'title': self.title,
+            'classroomURL': self.classroomURL,
             'submission_due': submission_due,
             'submission_start': submission_start,
             'assessments': assessments,
@@ -277,6 +278,7 @@ class StudioMixin:
         # so we can safely modify the XBlock fields.
         self.title = data['title']
         self.display_name = data['title']
+        self.classroomURL = data['classroomURL']
         self.prompts = data['prompts']
         self.prompts_type = data['prompts_type']
         self.rubric_criteria = data['criteria']

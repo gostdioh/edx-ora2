@@ -48,3 +48,13 @@ You can get help with this code on our `mailing lists`_ or in real-time conversa
 .. |coverage-status| image:: https://coveralls.io/repos/edx/edx-ora2/badge.png?branch=master
    :target: https://coveralls.io/r/edx/edx-ora2?branch=master
    :alt: Coverage badge
+
+
+
+開發過程只要
+
+在devstack 中啟動 studio service:
+  make dev.up.studio
+
+make install-local-ora 即更新服務
+不用重啟service, 重啟 service 是從 image 來，因此要update image ,但 update image 後，要重新準備 provision, 但這過程會安裝舊版的 ora

@@ -202,6 +202,14 @@ class OpenAssessmentBlock(MessageMixin,
         help="A title to display to a student (plain text)."
     )
 
+    classroomURL = String(
+        default="https://classroom.github.com/a/L3d8rD7O",
+        scope=Scope.content,
+        help="輸入github classroom 中建立作業的邀請連結的URL"
+    )
+
+
+
     leaderboard_show = Integer(
         default=0,
         scope=Scope.content,
