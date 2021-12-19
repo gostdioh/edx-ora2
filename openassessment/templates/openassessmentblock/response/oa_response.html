@@ -86,6 +86,7 @@
                       {% trans "After you submit a response on behalf of your team, it cannot be edited" %}
                     </strong>.
                   {% else %}
+                    <div>測試</div>
                     {% trans "Enter your response to the prompt." %}
                     {% if submission_due %}
                       {% blocktrans %}
@@ -101,6 +102,7 @@
                           </span>
                       </span>).
                     {% else %}
+                      <div>還沒結束</div>
                       {% trans "You can save your progress and return to complete your response at any time." %}
                     {% endif %}
                     <strong class="emphasis">{% trans "After you submit your response, you cannot edit it" %}</strong>.
@@ -122,6 +124,11 @@
                     </div>
                 </div>
             {% endif %}
+            <div>
+              <p>
+                請先接受github 作業模版，完成後上傳URL 
+              </p>
+            </div>
             <div class="step__content">
                 <form class="response__submission">
                     <ol class="list list--fields response__submission__content">
@@ -203,6 +210,9 @@
                         {% endfor %}
 
                         {% if has_real_user %}
+
+                          
+
                           {% if team_name and previous_team_name %}
                               <div id='team_user_has_previous_submission'>
                                   {% blocktrans %}

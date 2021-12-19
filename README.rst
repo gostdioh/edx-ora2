@@ -56,5 +56,9 @@ You can get help with this code on our `mailing lists`_ or in real-time conversa
 在devstack 中啟動 studio service:
   make dev.up.studio
 
+先 make dev.shell.studio 到container 中
+
+改到 js 先
+make static
 make install-local-ora 即更新服務
 不用重啟service, 重啟 service 是從 image 來，因此要update image ,但 update image 後，要重新準備 provision, 但這過程會安裝舊版的 ora

@@ -749,6 +749,9 @@ def serialize_content_to_xml(oa_block, root):
     title = etree.SubElement(root, 'title')
     title.text = str(oa_block.title)
 
+    classroomURL = etree.SubElement(root,'classroomURL')
+    classroomURL.text = str(oa_block.classroomURL)
+
     # Assessment list
     assessments_root = etree.SubElement(root, 'assessments')
     serialize_assessments(assessments_root, oa_block)
@@ -924,6 +927,13 @@ def parse_from_xml(root):
         raise UpdateFromXmlError('Every assessment must contain a "title" element.')
     title = _safe_get_text(title_el)
 
+
+     classroomURL_el = root.find('classroomURL')
+     if classroomURL_el is None:
+        raise UpdateFromXmlError('Every assessment must contain a "classroomURL" element.')
+    classroomURL = _safe_get_text(classroomURL_el)
+   
+
     # Retrieve the rubric
     rubric_el = root.find('rubric')
     if rubric_el is None:
@@ -961,6 +971,7 @@ def parse_from_xml(root):
 
     return {
         'title': title,
+        'classroomURL':classroomURL,
         'prompts': prompts,
         'prompts_type': prompts_type,
         'rubric_criteria': rubric['criteria'],

@@ -891,6 +891,7 @@ class OpenAssessmentBlock(MessageMixin,
         block.submission_start = config['submission_start']
         block.submission_due = config['submission_due']
         block.title = config['title']
+        block.classroomURL =config['classroomURL']
         block.prompts = config['prompts']
         block.prompts_type = config['prompts_type']
         block.text_response = config['text_response']
