@@ -857,6 +857,7 @@ class SubmissionMixin:
         path = 'openassessmentblock/response/oa_response.html'
         context = {
             'enable_delete_files': False,
+            'classroomURL': self.classroomURL,
             'file_upload_response': self.file_upload_response,
             'has_real_user': self.has_real_user,
             'prompts_type': self.prompts_type,

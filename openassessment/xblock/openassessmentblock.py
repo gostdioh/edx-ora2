@@ -203,7 +203,7 @@ class OpenAssessmentBlock(MessageMixin,
     )
 
     classroomURL = String(
-        default="https://classroom.github.com/a/L3d8rD7O",
+        default="https://classroom.github.com/a/ag4nr5Fn",
         scope=Scope.content,
         help="輸入github classroom 中建立作業的邀請連結的URL"
     )

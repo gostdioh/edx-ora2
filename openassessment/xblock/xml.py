@@ -928,8 +928,8 @@ def parse_from_xml(root):
     title = _safe_get_text(title_el)
 
 
-     classroomURL_el = root.find('classroomURL')
-     if classroomURL_el is None:
+    classroomURL_el = root.find('classroomURL')
+    if classroomURL_el is None:
         raise UpdateFromXmlError('Every assessment must contain a "classroomURL" element.')
     classroomURL = _safe_get_text(classroomURL_el)
    

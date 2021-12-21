@@ -56,7 +56,6 @@ You can get help with this code on our `mailing lists`_ or in real-time conversa
 在devstack 中啟動 studio service:
   make dev.up.studio
 
-先 make dev.shell.studio 到container 中
 
 改到 js 先
 make static
