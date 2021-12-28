@@ -17,6 +17,18 @@
                 </div>
             </article>
             {% if part.text %}
+            <div class="row showPane">
+                <div class="play col-xs-7" style="text-align: center;">
+                  <iframe id="game-frame" scrolling="no" width="640" height="480" frameBorder="0" src={{ part.text }} ></iframe>
+                  <button @click="reloadGame" style="margin-top:10px; font-size: 2em;">重新整理遊戲</button>
+                </div>
+                <div class="editor-container col-xs-5" >
+                    <textarea class="submission__answer__part__text__value" style=" min-width:500px; max-width:100%;min-height:250px;height:100%;width:100%;" >
+                        {{ part.code }}
+                    </textarea>
+                </div>
+              </div>
+
             <div class="submission__answer__part__text">
                 <h5 class="submission__answer__part__text__title">{{ answer_text_label }}</h5>
                 {% if text_response_editor == 'tinymce' %}
@@ -34,4 +46,7 @@
         </li>
     {% endfor %}
 </ol>
+
+
+
 {% endspaceless %}

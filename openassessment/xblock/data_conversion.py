@@ -3,6 +3,7 @@ Data Conversion utility methods for handling ORA2 XBlock data transformations an
 
 """
 import json
+import urllib.request
 
 
 def convert_training_examples_list_to_dict(examples_list):
@@ -219,9 +220,25 @@ def create_submission_dict(submission, prompts):
 
     if 'text' in submission['answer']:
         parts[0]['text'] = submission['answer'].pop('text')
+        myurl =parts[0]['text']
+        if myurl.startswith("https://") and "github.io" in myurl:
+            myurl =myurl+"assign1.pde"
+            response = urllib.request.urlopen(myurl)
+            data = response.read()      # a `bytes` object
+            code = data.decode('utf-8') 
+            parts[0]['code']=code
+
     else:
         for index, part in enumerate(submission['answer'].pop('parts')):
             parts[index]['text'] = part['text']
+            myurl =parts[0]['text']
+            if myurl.startswith("https://") and "github.io" in myurl:
+                myurl =myurl+"assign1.pde"
+                response = urllib.request.urlopen(myurl)
+                data = response.read()      # a `bytes` object
+                code = data.decode('utf-8') 
+                parts[0]['code']=code
+
 
     submission['answer']['parts'] = parts
 

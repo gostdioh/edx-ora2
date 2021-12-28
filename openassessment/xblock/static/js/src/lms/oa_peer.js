@@ -1,6 +1,7 @@
 import DateTimeFactory from './oa_datefactory';
 import Rubric from './oa_rubric';
 
+
 /**
 Interface for peer asssessment view.
 
@@ -75,6 +76,7 @@ export class PeerView {
      Use Response Editor to render response
      * */
     renderResponseViaEditor() {
+      
       const sel = $('.step--peer-assessment', this.element);
       const responseElements = sel.find('.submission__answer__part__text__value');
       this.responseEditorLoader.load(this.data.TEXT_RESPONSE_EDITOR, responseElements);
