@@ -18,6 +18,46 @@
                 {% endblock %}
             </div>
 
+
+            <div id="games" class="machineBoxs">
+                <div class="machineBox col-xs-4 col-sm-2">
+                  <a data-toggle="modal" data-target="#assignModalInfo1" data-nth="1" class="indexGame">
+                    <img width="100%" src="/asset-v1:edX+DemoX+Demo_Course+type@asset+block@broke-01.png" />
+                  </a>
+                </div>
+            </div>
+
+
+            <div id="assignModalInfo1" class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">歡迎進入 玩電玩・學程式 的世界！</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="btn btn-primary authBtn">
+                        <div class="fb-login-button" data-onlogin="fb_login" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true"></div>
+                      </div>
+            
+                      <a class="btn btn-default authBtn" href="signup.html">
+                                課程學生註冊
+                            </a>
+                      <div id="status">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
             <ol class="openassessment__steps">
                 {% for assessment in rubric_assessments %}
                     <li class="{{ assessment.class_id }} openassessment__steps__step is--loading">
