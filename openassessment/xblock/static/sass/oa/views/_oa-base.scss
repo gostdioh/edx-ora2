@@ -1183,6 +1183,7 @@
 
 .machineBoxs{
 	width: calc(100% - 15px);
+  float: unset;
 }
 
 
@@ -1190,6 +1191,7 @@
 	display: block;
     margin-left: auto;
     margin-right: auto;
+    float: unset;
 }
 .machineBox > img {
 	width:100%;

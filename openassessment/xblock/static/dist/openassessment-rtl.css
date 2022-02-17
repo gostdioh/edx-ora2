@@ -2766,12 +2766,14 @@ hr.divider,
 
 .machineBoxs {
   width: calc(100% - 15px);
+  float: unset;
 }
 
 .machineBox {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: unset;
 }
 
 .machineBox > img {

@@ -105,7 +105,7 @@ class StudioSettingsPage(StudioPage):
         Clicks save button
         """
         btn_css = 'div#page-notification button.action-save'
-        self.browser.execute_script(f"$('{btn_css}').focus().click()")
+        self.execute_script(f"$('{btn_css}').focus().click()")
         self.wait_for_ajax()
         self.wait_for_element_visibility(
             '#alert-confirmation-title',
