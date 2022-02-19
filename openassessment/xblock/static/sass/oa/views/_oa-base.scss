@@ -1182,7 +1182,8 @@
 
 
 .machineBoxs{
-	width: calc(100% - 15px);
+  display: block;
+	width: 100%;
   float: unset;
 }
 
@@ -1191,10 +1192,12 @@
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    float: unset;
+    float:right ;
+
 }
 .machineBox > img {
 	width:100%;
+  height: 100%;
 }
 .indexGame {
 	display:block;
