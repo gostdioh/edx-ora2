@@ -2790,7 +2790,7 @@ hr.divider,
 .mymodal {
   width: 80% !important;
   left: 50% !important;
-  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0) !important;
 }
 
 .open-response-assessment-block table {
