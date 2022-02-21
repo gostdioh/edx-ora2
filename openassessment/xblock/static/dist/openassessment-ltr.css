@@ -2787,6 +2787,12 @@ hr.divider,
   cursor: pointer;
 }
 
+.mymodal {
+  width: 80% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, 0);
+}
+
 .open-response-assessment-block table {
   table-layout: fixed;
 }
