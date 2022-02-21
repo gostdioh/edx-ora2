@@ -229,8 +229,6 @@ export class ResponseView {
         readyToSubmit = false;
       }
 
-      debugger;
-
       // if new files are to be uploaded, confirm that they have descriptions
       this.submitEnabled(readyToSubmit);
     }
@@ -411,7 +409,6 @@ export class ResponseView {
      the user has entered a response.
      * */
     handleResponseChanged() {
-      debugger;
       this.checkSubmissionAbility();
 
       // Update the save button, save status, and "unsaved changes" warning
