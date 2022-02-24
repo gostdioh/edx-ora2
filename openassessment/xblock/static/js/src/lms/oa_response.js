@@ -73,7 +73,14 @@ export class ResponseView {
           // First load response editor then apply other things
           view.loadResponseEditor().then((editorController) => {
             view.responseEditorController = editorController;
-            view.installHandlers();
+            
+            $( "#assignModalInfo1" ).on('shown', function(){
+              installHandlers();
+              //alert("I want this to appear after the modal has opened!");
+          });
+
+
+            //view.installHandlers();
             view.setAutoSaveEnabled(true);
             view.isRendering = false;
             view.baseView.announceStatusChangeToSRandFocus(stepID, usageID, false, view, focusID);
