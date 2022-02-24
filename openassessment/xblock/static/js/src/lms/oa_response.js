@@ -110,7 +110,7 @@ export class ResponseView {
      Install event handlers for the view.
      * */
     installHandlers() {
-      const sel = $('.step--response', this.element);
+      const sel = $('#assignModalInfo1', this.element);
       const view = this;
       let uploadType = '';
       if (sel.find('.submission__answer__display__file').length) {
