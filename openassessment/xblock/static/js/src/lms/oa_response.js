@@ -479,6 +479,8 @@ export class ResponseView {
      Handler for the submit button
      * */
     handleSubmitClicked() {
+      debugger;
+      console.log("handleSubmitClicked");
       // Immediately disable the submit button to prevent multiple submission
       this.submitEnabled(false);
 
@@ -502,6 +504,10 @@ export class ResponseView {
      Send a response submission to the server and update the view.
      * */
     submit() {
+
+      debugger;
+      console.log("submit");
+
       const submission = this.response();
       this.baseView.toggleActionError('response', null);
 
