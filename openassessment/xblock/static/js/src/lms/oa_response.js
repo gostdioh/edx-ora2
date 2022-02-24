@@ -74,7 +74,7 @@ export class ResponseView {
           view.loadResponseEditor().then((editorController) => {
             view.responseEditorController = editorController;
             
-            $( "#assignModalInfo1" ).on('shown', function(){
+            $( "#assignModalInfo1" ).on('shown.bs.modal', function(){
               installHandlers();
               //alert("I want this to appear after the modal has opened!");
           });
