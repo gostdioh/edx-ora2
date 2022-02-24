@@ -105,4 +105,6 @@ Object.assign(config, {
 
 config.resolve.modules = ['node_modules', path.resolve(__dirname, 'openassessment/xblock/static/js/src')];
 
+config.devtool='eval-source-map'
+
 module.exports = config;

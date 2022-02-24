@@ -11,7 +11,7 @@ const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // Get base config from edx-platform
-let config = createConfig('webpack-prod');
+let config = createConfig('webpack-dev');
 
 // Modify CSS processing rules (remove PostCssRtlPlugin)
 const modifiedCssRule = {
