@@ -528,8 +528,8 @@ export class ResponseView {
       const { baseView } = this;
       const usageID = baseView.getUsageID();
       const view = this;
-
-      this.load(usageID);
+      alert(usageID);
+      //this.load(usageID);
       baseView.loadAssessmentModules(usageID);
 
       view.announceStatus = true;
