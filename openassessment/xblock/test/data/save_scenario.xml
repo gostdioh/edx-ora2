@@ -1,5 +1,6 @@
 <openassessment text_response="required" file_upload_response="optional" file_upload_type="pdf-and-image">
     <title>Open Assessment Test</title>
+     <classroomURL>https://classroom.github.com/a/ag4nr5Fn</classroomURL>
     <prompts>
         <prompt>
             <description>Given the state of the world today, what do you think should be done to combat poverty?</description>

@@ -788,6 +788,7 @@ class SubmissionMixin:
         Submitted and graded
 
         """
+        logger.debug("render_submissio called")
         path, context = self.submission_path_and_context()
         return self.render_assessment(path, context_dict=context)
 

@@ -2793,6 +2793,10 @@ hr.divider,
   transform: translate(-50%, 0) !important;
 }
 
+.mypadding {
+  padding: 50px !important;
+}
+
 .open-response-assessment-block table {
   table-layout: fixed;
 }

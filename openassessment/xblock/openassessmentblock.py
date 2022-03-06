@@ -318,6 +318,7 @@ class OpenAssessmentBlock(MessageMixin,
     def course_id(self):
         return str(self.xmodule_runtime.course_id)  # pylint: disable=no-member
 
+
     @property
     def text_response(self):
         """
@@ -544,6 +545,9 @@ class OpenAssessmentBlock(MessageMixin,
         except AssessmentWorkflowError:
             # Log the exception, but continue loading the page
             logger.exception('An error occurred while updating the workflow on page load.')
+        root_url="studio"
+        if hasattr(settings, 'LMS_ROOT_URL'):
+            root_url = settings.LMS_ROOT_URL
 
         ui_models = self._create_ui_models()
         # All data we intend to pass to the front end.
@@ -553,6 +557,7 @@ class OpenAssessmentBlock(MessageMixin,
             "prompts_type": self.prompts_type,
             "rubric_assessments": ui_models,
             "show_staff_area": self.is_course_staff and not self.in_studio_preview,
+            "course_id": self.course_id+root_url
         }
         template = get_template("openassessmentblock/oa_base.html")
         return self._create_fragment(template, context_dict, initialize_js_func='OpenAssessmentBlock')

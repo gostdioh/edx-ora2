@@ -47,6 +47,7 @@
         baseUrl: getBaseUrlPath(),
         paths: {
             'jquery': './openassessment/xblock/static/js/lib/jquery.min',
+            'bootstrap': './openassessment/xblock/static/js/lib/bootstrap',
             'moment': './node_modules/moment/min/moment-with-locales.min',
             'moment-timezone': './node_modules/moment-timezone/builds/moment-timezone-with-data.min',
             'edx-ui-toolkit/js/utils/date-utils': './node_modules/edx-ui-toolkit/src/js/utils/date-utils',

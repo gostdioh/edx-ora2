@@ -1,5 +1,6 @@
 <openassessment>
     <title>Open Assessment Test</title>
+     <classroomURL>https://classroom.github.com/a/ag4nr5Fn</classroomURL>
     <prompts>
         <prompt>
             <description>I made this so I don't have to work with the unicode rubric in my tests.</description>

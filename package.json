@@ -11,6 +11,8 @@
     "edx-ui-toolkit": "^1.5.4",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.34",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

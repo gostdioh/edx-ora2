@@ -61,7 +61,7 @@
 
     <div id="games" class="machineBoxs">
       <div class="machineBox col-xs-4 col-sm-2">
-        <a data-bs-toggle="modal" data-bs-target="#assignModalInfo1" data-nth="1" class="indexGame">
+        <a data-toggle="modal" data-target="#assignModalInfo1" data-nth="1" class="indexGame">
           <img width="100%" src="/asset-v1:edX+DemoX+Demo_Course+type@asset+block@broke-01.png" />
         </a>
       </div>
@@ -74,11 +74,11 @@
 </li>
 
 
-<div id="assignModalInfo1" class="modal fade" data-bs-backdrop="static" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="assignModalInfo1" class="modal fade" data-backdrop="static" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mymodal">
-    <div class="modal-content">
+    <div class="modal-content mypadding">
       <div class="modal-header">
-        <button type="button" class="close" data-bs-dismiss="modal">
+        <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
         </button>
@@ -123,7 +123,7 @@
                   {% trans "After you submit a response on behalf of your team, it cannot be edited" %}
                 </strong>.
               {% else %}
-                <div>測試</div>
+               
                 {% trans "Enter your response to the prompt." %}
                 {% if submission_due %}
                   {% blocktrans %}
@@ -139,7 +139,7 @@
                       </span>
                   </span>).
                 {% else %}
-                  <div>還沒結束</div>
+                
                   {% trans "You can save your progress and return to complete your response at any time." %}
                 {% endif %}
                 <strong class="emphasis">{% trans "After you submit your response, you cannot edit it" %}</strong>.
@@ -171,6 +171,7 @@
         </div>
         <div class="step__content">
             <form class="response__submission">
+              
                 <ol class="list list--fields response__submission__content">
                     {% for part in saved_response.answer.parts %}
                         <li class="submission__answer__part">
@@ -398,7 +399,7 @@
 </div>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 </div>
 </div>

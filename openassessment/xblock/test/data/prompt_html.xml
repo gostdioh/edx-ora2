@@ -1,5 +1,6 @@
 <openassessment prompts_type="html">
     <title>Open Assessment Test</title>
+     <classroomURL>https://classroom.github.com/a/ag4nr5Fn</classroomURL>
     <rubric>
         <prompt><![CDATA[<code><strong>Question 123</strong></code>]]></prompt>
         <criterion>

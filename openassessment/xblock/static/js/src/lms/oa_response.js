@@ -73,15 +73,11 @@ export class ResponseView {
           // First load response editor then apply other things
           view.loadResponseEditor().then((editorController) => {
             view.responseEditorController = editorController;
-            
-            $( "#assignModalInfo1" ).on('shown.bs.modal', function(){
-              
+            $('#assignModalInfo1').on('shown.bs.modal', () => {
               view.installHandlers();
-              //alert("I want this to appear after the modal has opened!");
-          });
-
-
-            //view.installHandlers();
+              // alert("I want this to appear after the modal has opened!");
+            });
+            // view.installHandlers();
             view.setAutoSaveEnabled(true);
             view.isRendering = false;
             view.baseView.announceStatusChangeToSRandFocus(stepID, usageID, false, view, focusID);
@@ -101,7 +97,9 @@ export class ResponseView {
      * Returns: promise
      */
     loadResponseEditor() {
-      const sel = $('.step--response', this.element);
+      // const sel = $('.step--response', this.element);
+      const sel = $('.modal-content', this.element);
+
       const editorElements = sel.find('.submission__answer__part__text__value');
       return this.responseEditorLoader.load(this.data.TEXT_RESPONSE_EDITOR, editorElements);
     }
@@ -111,6 +109,7 @@ export class ResponseView {
      * */
     installHandlers() {
       const sel = $('#assignModalInfo1', this.element);
+
       const view = this;
       let uploadType = '';
       if (sel.find('.submission__answer__display__file').length) {
@@ -176,7 +175,10 @@ export class ResponseView {
           sel.find('#team_text_response_warning').remove();
         },
       );
-      this.confirmationDialog = new ConfirmationAlert(sel.find('.step--response__dialog-confirm'));
+
+      const elm = sel.find('.step--response__dialog-confirm');
+
+      this.confirmationDialog = new ConfirmationAlert(elm);
     }
 
     /**
@@ -456,6 +458,8 @@ export class ResponseView {
 
       const view = this;
       const savedResponse = this.response();
+      savedResponse.csrfmiddlewaretoken = $('#csrfmiddlewaretoken').val();
+
       this.server.save(savedResponse).done(() => {
         // Remember which response we saved, once the server confirms that it's been saved...
         view.savedResponse = savedResponse;
@@ -487,8 +491,6 @@ export class ResponseView {
      Handler for the submit button
      * */
     handleSubmitClicked() {
-      debugger;
-      console.log("handleSubmitClicked");
       // Immediately disable the submit button to prevent multiple submission
       this.submitEnabled(false);
 
@@ -512,10 +514,6 @@ export class ResponseView {
      Send a response submission to the server and update the view.
      * */
     submit() {
-
-      debugger;
-      console.log("submit");
-
       const submission = this.response();
       this.baseView.toggleActionError('response', null);
 
@@ -543,7 +541,7 @@ export class ResponseView {
       const usageID = baseView.getUsageID();
       const view = this;
       alert(usageID);
-      //this.load(usageID);
+      // this.load(usageID);
       baseView.loadAssessmentModules(usageID);
 
       view.announceStatus = true;

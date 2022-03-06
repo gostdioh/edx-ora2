@@ -1,5 +1,6 @@
 <openassessment url_name="35809bfd971f4acc9b55e5a7c737b77d" submission_start="2001-01-01T00:00:00+00:00" submission_due="2029-01-01T00:00:00+00:00" text_response="required" allow_latex="False" prompts_type="html">
   <title>Quiz about computers</title>
+   <classroomURL>https://classroom.github.com/a/ag4nr5Fn</classroomURL>
   <assessments>
     <assessment name="student-training">
       <example>

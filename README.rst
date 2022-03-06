@@ -64,4 +64,13 @@ make install-local-ora 即更新服務
 
 
 node 17
+code: 'ERR_OSSL_EVP_UNSUPPORTED'
 export NODE_OPTIONS=--openssl-legacy-provider
+
+
+為了使用 modal 所以要引用 bootstrap 
+bootstrap 如引用 cdn, 其也會引用 cdn 的jquery, 但在使用 ajax 時會導致 cors 問題
+所以要引用 openedx 本身的 bootstrap, 但lms 與 studio 的  url 不同
+
+如用 ${static_url()} 要使用 mako template 
+
