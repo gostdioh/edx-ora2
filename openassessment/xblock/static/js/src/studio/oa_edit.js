@@ -238,6 +238,8 @@ export class StudioView {
       criteria: this.rubricView.criteriaDefinition(),
       title: this.settingsView.displayName(),
       classroomURL: this.settingsView.classroomURL(),
+      imgBrokenURL: this.settingsView.imgBrokenURL(),
+      imgDoneURL: this.settingsView.imgDoneURL(),
       submissionStart: this.scheduleView.submissionStart(),
       submissionDue: this.scheduleView.submissionDue(),
       assessments: this.assessmentsStepsView.assessmentsDescription(),

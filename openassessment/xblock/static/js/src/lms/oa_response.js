@@ -73,11 +73,11 @@ export class ResponseView {
           // First load response editor then apply other things
           view.loadResponseEditor().then((editorController) => {
             view.responseEditorController = editorController;
-            $('#assignModalInfo1').on('shown.bs.modal', () => {
-              view.installHandlers();
+           // $('#assignModalInfo1').on('show.bs.modal', () => {
+            //  view.installHandlers();
               // alert("I want this to appear after the modal has opened!");
-            });
-            // view.installHandlers();
+           // });
+            view.installHandlers();
             view.setAutoSaveEnabled(true);
             view.isRendering = false;
             view.baseView.announceStatusChangeToSRandFocus(stepID, usageID, false, view, focusID);
@@ -487,10 +487,23 @@ export class ResponseView {
       });
     }
 
+     eventFire(el, etype){
+      if (el.fireEvent) {
+        el.fireEvent('on' + etype);
+      } else {
+        var evObj = document.createEvent('Events');
+        evObj.initEvent(etype, true, false);
+        el.dispatchEvent(evObj);
+      }
+    }
+
     /**
      Handler for the submit button
      * */
     handleSubmitClicked() {
+      
+      this.eventFire($(".btn-default").get(0),'click');
+      //$('#assignModalInfo1').modal('hide');
       // Immediately disable the submit button to prevent multiple submission
       this.submitEnabled(false);
 
@@ -540,7 +553,7 @@ export class ResponseView {
       const { baseView } = this;
       const usageID = baseView.getUsageID();
       const view = this;
-      alert(usageID);
+      //alert(usageID);
       // this.load(usageID);
       baseView.loadAssessmentModules(usageID);
 

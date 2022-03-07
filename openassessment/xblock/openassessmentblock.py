@@ -211,6 +211,18 @@ class OpenAssessmentBlock(MessageMixin,
     )
 
 
+    imgBrokenURL = String(
+        default="/asset-v1:edX+DemoX+Demo_Course+type@asset+block@broke-01.png",
+        scope=Scope.content,
+        help="輸入未完成圖像的URL"
+    )
+
+    imgDoneURL = String(
+        default="/asset-v1:edX+DemoX+Demo_Course+type@asset+block@broke-01.png",
+        scope=Scope.content,
+        help="輸入完成圖像的URL"
+    )
+
 
     leaderboard_show = Integer(
         default=0,
@@ -900,6 +912,8 @@ class OpenAssessmentBlock(MessageMixin,
         block.submission_due = config['submission_due']
         block.title = config['title']
         block.classroomURL =config['classroomURL']
+        block.imgBrokenURL =config['imgBrokenURL']
+        block.imgDoneURL =config['imgDoneURL']        
         block.prompts = config['prompts']
         block.prompts_type = config['prompts_type']
         block.text_response = config['text_response']

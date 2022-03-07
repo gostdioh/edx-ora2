@@ -749,8 +749,14 @@ def serialize_content_to_xml(oa_block, root):
     title = etree.SubElement(root, 'title')
     title.text = str(oa_block.title)
 
-    classroomURL = etree.SubElement(root,'classroomURL')
-    classroomURL.text = str(oa_block.classroomURL)
+    if oa_block.classroomURL:
+        root.set('classroomURL',str(oa_block.classroomURL))
+    if oa_block.imgBrokenURL:
+        root.set('imgBrokenURL',str(oa_block.imgBrokenURL))
+    if oa_block.imgDoneURL:
+        root.set('imgDoneURL',str(oa_block.imgDoneURL))
+    
+
 
     # Assessment list
     assessments_root = etree.SubElement(root, 'assessments')
@@ -928,11 +934,21 @@ def parse_from_xml(root):
     title = _safe_get_text(title_el)
 
 
+    classroomURL=""
     classroomURL_el = root.find('classroomURL')
-    if classroomURL_el is None:
-        raise UpdateFromXmlError('Every assessment must contain a "classroomURL" element.')
-    classroomURL = _safe_get_text(classroomURL_el)
-   
+    if classroomURL_el is not None:
+        classroomURL = _safe_get_text(classroomURL_el)
+
+    imgBrokenURL=""
+    imgBrokenURL_el = root.find('imgBrokenURL')
+    if imgBrokenURL_el is not None:
+        imgBrokenURL = _safe_get_text(imgBrokenURL_el)
+
+    imgDoneURL=""
+    imgDoneURL_el = root.find('imgDoneURL')
+    if imgDoneURL_el is not None:
+        imgDoneURL = _safe_get_text(imgDoneURL_el)
+
 
     # Retrieve the rubric
     rubric_el = root.find('rubric')
@@ -972,6 +988,8 @@ def parse_from_xml(root):
     return {
         'title': title,
         'classroomURL':classroomURL,
+        'imgBrokenURL':imgBrokenURL,
+        'imgDoneURL':imgDoneURL,        
         'prompts': prompts,
         'prompts_type': prompts_type,
         'rubric_criteria': rubric['criteria'],

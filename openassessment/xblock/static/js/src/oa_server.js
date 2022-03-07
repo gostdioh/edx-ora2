@@ -458,6 +458,8 @@ export class Server {
       feedback_default_text: options.feedback_default_text,
       title: options.title,
       classroomURL: options.classroomURL,
+      imgBrokenURL: options.imgBrokenURL,
+      imgDoneURL: options.imgDoneURL,
       submission_start: options.submissionStart,
       submission_due: options.submissionDue,
       criteria: options.criteria,

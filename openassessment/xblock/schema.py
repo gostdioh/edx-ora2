@@ -104,6 +104,8 @@ EDITOR_UPDATE_SCHEMA = Schema({
     Required('prompts_type', default='text'): Any(All(utf8_validator, In(PROMPTS_TYPES)), None),
     Required('title'): utf8_validator,
     Optional('classroomURL'): utf8_validator,
+    Optional('imgBrokenURL'): utf8_validator,
+    Optional('imgDoneURL'): utf8_validator,
     Required('feedback_prompt'): utf8_validator,
     Required('feedback_default_text'): utf8_validator,
     Required('submission_start'): Any(datetime_validator, None),

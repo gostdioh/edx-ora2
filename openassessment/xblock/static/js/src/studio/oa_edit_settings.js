@@ -30,6 +30,8 @@ export class EditSettingsView {
     this.onTeamsEnabledChange = this.onTeamsEnabledChange.bind(this);
     this.displayName = this.displayName.bind(this);
     this.classroomURL = this.classroomURL.bind(this);
+    this.imgBrokenURL = this.imgBrokenURL.bind(this);
+    this.imgDoneURL = this.imgDoneURL.bind(this);
     this.textResponseNecessity = this.textResponseNecessity.bind(this);
     this.textResponseEditor = this.textResponseEditor.bind(this);
     this.fileUploadResponseNecessity = this.fileUploadResponseNecessity.bind(this);
@@ -213,6 +215,19 @@ export class EditSettingsView {
     const sel = $('#openassessment_classroomURL_editor', this.settingsElement);
     return Fields.stringField(sel, name);
   }
+
+  imgBrokenURL(name) {
+    const sel = $('#openassessment_imgBrokenURL_editor', this.settingsElement);
+    return Fields.stringField(sel, name);
+  }
+
+  imgDoneURL(name) {
+    const sel = $('#openassessment_imgDoneURL_editor', this.settingsElement);
+    return Fields.stringField(sel, name);
+  }
+
+
+
 
   /**
      Get or set text response necessity.
