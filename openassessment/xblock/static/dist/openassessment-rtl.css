@@ -2797,6 +2797,10 @@ hr.divider,
   padding: 50px !important;
 }
 
+.myclick {
+  width: 100px !important;
+}
+
 .open-response-assessment-block table {
   table-layout: fixed;
 }
@@ -5033,48 +5037,48 @@ a > .paragon-styles code {
   max-width: 100%;
 }
 .paragon-styles .col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%;
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
 }
 .paragon-styles .col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
 }
 .paragon-styles .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
 .paragon-styles .col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
 }
 .paragon-styles .col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%;
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
 }
 .paragon-styles .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 .paragon-styles .col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%;
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
 }
 .paragon-styles .col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
 }
 .paragon-styles .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
 }
 .paragon-styles .col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%;
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
 }
 .paragon-styles .col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%;
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
 }
 .paragon-styles .col-12 {
   flex: 0 0 100%;
@@ -5126,37 +5130,37 @@ a > .paragon-styles code {
   order: 12;
 }
 .paragon-styles .offset-1 {
-  margin-left: 8.3333333333%;
+  margin-left: 8.33333333%;
 }
 .paragon-styles .offset-2 {
-  margin-left: 16.6666666667%;
+  margin-left: 16.66666667%;
 }
 .paragon-styles .offset-3 {
   margin-left: 25%;
 }
 .paragon-styles .offset-4 {
-  margin-left: 33.3333333333%;
+  margin-left: 33.33333333%;
 }
 .paragon-styles .offset-5 {
-  margin-left: 41.6666666667%;
+  margin-left: 41.66666667%;
 }
 .paragon-styles .offset-6 {
   margin-left: 50%;
 }
 .paragon-styles .offset-7 {
-  margin-left: 58.3333333333%;
+  margin-left: 58.33333333%;
 }
 .paragon-styles .offset-8 {
-  margin-left: 66.6666666667%;
+  margin-left: 66.66666667%;
 }
 .paragon-styles .offset-9 {
   margin-left: 75%;
 }
 .paragon-styles .offset-10 {
-  margin-left: 83.3333333333%;
+  margin-left: 83.33333333%;
 }
 .paragon-styles .offset-11 {
-  margin-left: 91.6666666667%;
+  margin-left: 91.66666667%;
 }
 @media (min-width: 576px) {
   .paragon-styles .col-sm {
@@ -5194,48 +5198,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-sm-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-sm-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-sm-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-sm-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-sm-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-sm-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-sm-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-sm-12 {
     flex: 0 0 100%;
@@ -5290,37 +5294,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-sm-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-sm-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-sm-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-sm-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-sm-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-sm-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-sm-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-sm-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-sm-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-sm-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-sm-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 768px) {
@@ -5359,48 +5363,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-md-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-md-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-md-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-md-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-md-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-md-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-md-12 {
     flex: 0 0 100%;
@@ -5455,37 +5459,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-md-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-md-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-md-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-md-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-md-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-md-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-md-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-md-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-md-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-md-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-md-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 992px) {
@@ -5524,48 +5528,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-lg-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-lg-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-lg-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-lg-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-lg-12 {
     flex: 0 0 100%;
@@ -5620,37 +5624,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-lg-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-lg-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-lg-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-lg-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-lg-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-lg-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-lg-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-lg-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-lg-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-lg-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-lg-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 1200px) {
@@ -5689,48 +5693,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-xl-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-xl-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-xl-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-xl-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-xl-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-xl-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-xl-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-xl-12 {
     flex: 0 0 100%;
@@ -5785,37 +5789,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-xl-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-xl-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-xl-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-xl-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-xl-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-xl-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-xl-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-xl-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-xl-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-xl-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-xl-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 .paragon-styles .table {
@@ -6162,10 +6166,6 @@ a > .paragon-styles code {
   background-color: transparent;
   border: 0;
 }
-.paragon-styles .form-control:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #495057;
-}
 .paragon-styles .form-control:focus {
   color: #495057;
   background-color: white;
@@ -6186,6 +6186,10 @@ a > .paragon-styles code {
 .paragon-styles input[type=datetime-local].form-control,
 .paragon-styles input[type=month].form-control {
   appearance: none;
+}
+.paragon-styles select.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #495057;
 }
 .paragon-styles select.form-control:focus::-ms-value {
   color: #495057;
@@ -6329,7 +6333,7 @@ a > .paragon-styles code {
 }
 .was-validated .paragon-styles .form-control:valid, .paragon-styles .form-control.is-valid {
   border-color: #178253;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem) !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23178253' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
@@ -6339,13 +6343,17 @@ a > .paragon-styles code {
   border-color: #178253;
   box-shadow: 0 0 0 0.2rem rgba(23, 130, 83, 0.25);
 }
+.was-validated .paragon-styles select.form-control:valid, .paragon-styles select.form-control.is-valid {
+  padding-right: 3rem !important;
+  background-position: right 1.5rem center;
+}
 .was-validated .paragon-styles textarea.form-control:valid, .paragon-styles textarea.form-control.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 .was-validated .paragon-styles .custom-select:valid, .paragon-styles .custom-select.is-valid {
   border-color: #178253;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
+  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem) !important;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23495057' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23178253' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
 }
 .was-validated .paragon-styles .custom-select:valid:focus, .paragon-styles .custom-select.is-valid:focus {
@@ -6415,7 +6423,7 @@ a > .paragon-styles code {
 }
 .was-validated .paragon-styles .form-control:invalid, .paragon-styles .form-control.is-invalid {
   border-color: #C32D3A;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem) !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23C32D3A' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23C32D3A' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
@@ -6425,13 +6433,17 @@ a > .paragon-styles code {
   border-color: #C32D3A;
   box-shadow: 0 0 0 0.2rem rgba(195, 45, 58, 0.25);
 }
+.was-validated .paragon-styles select.form-control:invalid, .paragon-styles select.form-control.is-invalid {
+  padding-right: 3rem !important;
+  background-position: right 1.5rem center;
+}
 .was-validated .paragon-styles textarea.form-control:invalid, .paragon-styles textarea.form-control.is-invalid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 .was-validated .paragon-styles .custom-select:invalid, .paragon-styles .custom-select.is-invalid {
   border-color: #C32D3A;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
+  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem) !important;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23495057' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23C32D3A' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23C32D3A' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
 }
 .was-validated .paragon-styles .custom-select:invalid:focus, .paragon-styles .custom-select.is-invalid:focus {
@@ -8948,18 +8960,24 @@ a > .paragon-styles code {
   display: flex;
   align-items: center;
 }
-.paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label, .paragon-styles .input-group > .custom-file:not(:first-child) .custom-file-label {
+.paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label, .paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label::after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.paragon-styles .input-group > .custom-file:not(:first-child) .custom-file-label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 .paragon-styles .input-group:not(.has-validation) > .form-control:not(:last-child),
 .paragon-styles .input-group:not(.has-validation) > .custom-select:not(:last-child),
+.paragon-styles .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label,
 .paragon-styles .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .paragon-styles .input-group.has-validation > .form-control:nth-last-child(n+3),
 .paragon-styles .input-group.has-validation > .custom-select:nth-last-child(n+3),
+.paragon-styles .input-group.has-validation > .custom-file:nth-last-child(n+3) .custom-file-label,
 .paragon-styles .input-group.has-validation > .custom-file:nth-last-child(n+3) .custom-file-label::after {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -11429,8 +11447,11 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   align-items: center;
   justify-content: center;
   width: 15%;
+  padding: 0;
   color: white;
   text-align: center;
+  background: none;
+  border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
@@ -11524,7 +11545,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
@@ -11548,7 +11569,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
@@ -11967,7 +11988,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   border: 0;
 }
 .paragon-styles .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
+  padding-top: 42.85714286%;
 }
 .paragon-styles .embed-responsive-16by9::before {
   padding-top: 56.25%;
@@ -11979,7 +12000,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   padding-top: 100%;
 }
 .paragon-styles .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
+  padding-top: 42.85714286%;
 }
 .paragon-styles .embed-responsive-16by9::before {
   padding-top: 56.25%;
@@ -14639,9 +14660,6 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
 .paragon-styles blockquote {
     border: 1px solid #adb5bd;
     page-break-inside: avoid;
-  }
-  .paragon-styles thead {
-    display: table-header-group;
   }
   .paragon-styles tr,
 .paragon-styles img {

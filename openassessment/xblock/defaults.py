@@ -16,47 +16,12 @@ DEFAULT_RUBRIC_CRITERIA = [
         'name': "Ideas",
         'label': "Ideas",
         'prompt': "Determine if there is a unifying theme or main idea.",
+        'quick': "20,10,0",
         'order_num': 0,
         'feedback': 'optional',
-        'options': [
-            {
-                'order_num': 0, 'points': 0, 'name': 'Poor', 'label': 'Poor',
-                'explanation': """Difficult for the reader to discern the main idea.  Too brief or too repetitive to establish or maintain a focus."""  # nopep8
-            },
-            {
-                'order_num': 1, 'points': 3, 'name': 'Fair', 'label': 'Fair',
-                'explanation': """Presents a unifying theme or main idea, but may include minor tangents.  Stays somewhat focused on topic and task."""  # nopep8
-            },
-            {
-                'order_num': 2, 'points': 5, 'name': 'Good', 'label': 'Good',
-                'explanation': """Presents a unifying theme or main idea without going off on tangents.  Stays completely focused on topic and task."""  # nopep8
-            },
-        ],
+   
     },
-    {
-        'name': "Content",
-        'label': "Content",
-        'prompt': "Assess the content of the submission",
-        'order_num': 1,
-        'options': [
-            {
-                'order_num': 0, 'points': 0, 'name': 'Poor', 'label': 'Poor',
-                'explanation': """Includes little information with few or no details or unrelated details.  Unsuccessful in attempts to explore any facets of the topic."""  # nopep8
-            },
-            {
-                'order_num': 1, 'points': 1, 'name': 'Fair', 'label': 'Fair',
-                'explanation': """Includes little information and few or no details.  Explores only one or two facets of the topic."""  # nopep8
-            },
-            {
-                'order_num': 2, 'points': 3, 'name': 'Good', 'label': 'Good',
-                'explanation': """Includes sufficient information and supporting details. (Details may not be fully developed; ideas may be listed.)  Explores some facets of the topic."""  # nopep8
-            },
-            {
-                'order_num': 3, 'points': 5, 'name': 'Excellent', 'label': 'Excellent',
-                'explanation': """Includes in-depth information and exceptional supporting details that are fully developed.  Explores all facets of the topic."""  # nopep8
-            },
-        ],
-    },
+ 
 ]
 
 # The rubric's feedback prompt is a set of instructions letting the student
@@ -127,8 +92,8 @@ DEFAULT_PEER_ASSESSMENT = {
     "name": "peer-assessment",
     "start": DEFAULT_START,
     "due": DEFAULT_DUE,
-    "must_grade": 5,
-    "must_be_graded_by": 3,
+    "must_grade": 1,
+    "must_be_graded_by": 1,
     "enable_flexible_grading": False,
     "flexible_grading_days": 7,
     "flexible_grading_graded_by_percentage": 30
@@ -175,7 +140,6 @@ SELF_ASSESSMENT_MODULES = [
 ]
 
 PEER_ASSESSMENT_MODULES = [
-    DEFAULT_STUDENT_TRAINING,
     DEFAULT_PEER_ASSESSMENT,
 ]
 

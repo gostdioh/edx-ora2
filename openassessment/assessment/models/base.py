@@ -284,6 +284,8 @@ class RubricIndex:
             for option in options
         }
 
+        
+
     def find_criterion(self, criterion_name):
         """
         Find a criterion by its name.

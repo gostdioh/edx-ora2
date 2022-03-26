@@ -141,6 +141,7 @@ export class EditRubricView {
       const criterionItem = this.criteriaContainer.getItem(criterionIndex);
       criterionItem.label(criterion.label);
       criterionItem.prompt(criterion.prompt);
+      criterionItem.quick(criterion.quick);
       criterionItem.feedback(criterion.feedback);
 
       // Add Criterion options

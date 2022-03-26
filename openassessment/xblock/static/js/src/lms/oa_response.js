@@ -73,10 +73,10 @@ export class ResponseView {
           // First load response editor then apply other things
           view.loadResponseEditor().then((editorController) => {
             view.responseEditorController = editorController;
-           // $('#assignModalInfo1').on('show.bs.modal', () => {
+            // $('#assignModalInfo1').on('show.bs.modal', () => {
             //  view.installHandlers();
-              // alert("I want this to appear after the modal has opened!");
-           // });
+            // alert("I want this to appear after the modal has opened!");
+            // });
             view.installHandlers();
             view.setAutoSaveEnabled(true);
             view.isRendering = false;
@@ -487,11 +487,11 @@ export class ResponseView {
       });
     }
 
-     eventFire(el, etype){
+    eventFire(el, etype) {
       if (el.fireEvent) {
-        el.fireEvent('on' + etype);
+        el.fireEvent(`on${etype}`);
       } else {
-        var evObj = document.createEvent('Events');
+        const evObj = document.createEvent('Events');
         evObj.initEvent(etype, true, false);
         el.dispatchEvent(evObj);
       }
@@ -501,9 +501,8 @@ export class ResponseView {
      Handler for the submit button
      * */
     handleSubmitClicked() {
-      
-      this.eventFire($(".btn-default").get(0),'click');
-      //$('#assignModalInfo1').modal('hide');
+      this.eventFire($('.btn-default').get(0), 'click');
+      // $('#assignModalInfo1').modal('hide');
       // Immediately disable the submit button to prevent multiple submission
       this.submitEnabled(false);
 
@@ -553,7 +552,7 @@ export class ResponseView {
       const { baseView } = this;
       const usageID = baseView.getUsageID();
       const view = this;
-      //alert(usageID);
+      // alert(usageID);
       // this.load(usageID);
       baseView.loadAssessmentModules(usageID);
 

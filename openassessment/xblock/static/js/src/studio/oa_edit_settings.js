@@ -226,9 +226,6 @@ export class EditSettingsView {
     return Fields.stringField(sel, name);
   }
 
-
-
-
   /**
      Get or set text response necessity.
 

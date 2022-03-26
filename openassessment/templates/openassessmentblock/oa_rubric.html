@@ -2,7 +2,45 @@
 {% load i18n %}
 <div class="assessment__fields">
     <ol class="list list--fields assessment__rubric">
+
+
         {% for criterion in rubric_criteria %}
+        {% if criterion.quick != '' %}
+
+
+        <li
+            class="field field--radio is--required assessment__rubric__question is--showing ui-slidable__container {% if criterion.options %}has--options{% endif %} {{ rubric_type }}__assessment__rubric__question--{{ criterion.order_num }}"
+        >
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-xs-2">
+                  <div class="btn-toolbar">
+                    <button class="btn btn-outline-dark myclick" data-bs-toggle="button" value="Fail" data-criterion-name="{{ criterion.name }}"> 
+                        <i class="fa fa-remove"></i>
+                    </button>  
+                    <button  class="btn btn-outline-dark myclick" data-bs-toggle="button" value="Success" data-criterion-name="{{ criterion.name }}">
+                        <i class="fa fa-check"></i>
+                    </button>
+                    <button  class="btn btn-outline-dark myclick" data-bs-toggle="button" value="Bug" data-criterion-name="{{ criterion.name }}">
+                        <i class="fa fa-bug"></i>
+                    </button>
+                    </div>
+                </div>
+
+                <div class="col-xs-8">
+                    <p style="padding : 6px;">
+                        {{ criterion.prompt }}
+                    </p>
+        
+                </div>
+
+
+            </div>
+         </div>
+        </li> 
+        {% else %}
+
         <li
             class="field field--radio is--required assessment__rubric__question is--showing ui-slidable__container {% if criterion.options %}has--options{% endif %} {{ rubric_type }}__assessment__rubric__question--{{ criterion.order_num }}"
         >
@@ -13,6 +51,7 @@
                     <span class="label--required sr">({% trans "Required" %})</span>
                 </button>
             </div>
+            
 
             <div class="ui-slidable__content" aria-labelledby="oa_rubric__{{ rubric_type }}__{{ submission.uuid|default:'dummy_uuid' }}__{{ criterion.order_num }}" id="oa_rubric__{{ rubric_type }}__{{ submission.uuid|default:'dummy_uuid' }}__{{ criterion.order_num }}__content">
                 <div class="question__answers">
@@ -70,6 +109,7 @@
                 </div>
             </div>
         </li>
+        {% endif %}
         {% endfor %}
         {% if rubric_type != 'read_only' %}
             <li class="wrapper--input field field--textarea assessment__rubric__question assessment__rubric__question--feedback">

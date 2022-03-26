@@ -777,7 +777,7 @@ hr.divider,
   color: #414141;
 }
 .wrapper--xblock .field--radio .option__input, .wrapper--xblock .field--checkbox .option__input {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .wrapper--xblock .field--radio .option__input:checked + .option__label, .wrapper--xblock .field--checkbox .option__input:checked + .option__label {
   color: black;
@@ -1397,13 +1397,13 @@ hr.divider,
   color: #414141;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .openassessment .step--self-assessment .self-assessment__assessment .response__submission__label .list--actions, .openassessment .step--peer-assessment .peer-assessment__assessment .response__submission__label .list--actions, .openassessment .step--response .response__submission__actions .response__submission__label .list--actions, .openassessment .step--response .response__submission__content .response__submission__label .list--actions {
-  text-align: right;
+  text-align: left;
 }
 .openassessment .step--self-assessment .self-assessment__assessment .list--actions__item, .openassessment .step--peer-assessment .peer-assessment__assessment .list--actions__item, .openassessment .step--response .response__submission__actions .list--actions__item, .openassessment .step--response .response__submission__content .list--actions__item {
-  text-align: right;
+  text-align: left;
   margin-top: 5px;
 }
 .openassessment .step--self-assessment .self-assessment__assessment .action--save, .openassessment .step--peer-assessment .peer-assessment__assessment .action--save, .openassessment .step--response .response__submission__actions .action--save, .openassessment .step--response .response__submission__content .action--save {
@@ -1414,28 +1414,28 @@ hr.divider,
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .openassessment .step--self-assessment .self-assessment__assessment .action--save, .openassessment .step--peer-assessment .peer-assessment__assessment .action--save, .openassessment .step--response .response__submission__actions .action--save, .openassessment .step--response .response__submission__content .action--save {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .step--self-assessment .self-assessment__assessment .action--save, .openassessment .step--peer-assessment .peer-assessment__assessment .action--save, .openassessment .step--response .response__submission__actions .action--save, .openassessment .step--response .response__submission__content .action--save {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .step--self-assessment .self-assessment__assessment .action--save, .openassessment .step--peer-assessment .peer-assessment__assessment .action--save, .openassessment .step--response .response__submission__actions .action--save, .openassessment .step--response .response__submission__content .action--save {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .openassessment .step--self-assessment .self-assessment__assessment .action--save, .openassessment .step--peer-assessment .peer-assessment__assessment .action--save, .openassessment .step--response .response__submission__actions .action--save, .openassessment .step--response .response__submission__content .action--save {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
   }
 }
@@ -1460,7 +1460,7 @@ hr.divider,
   vertical-align: middle;
 }
 .step--response .step__rubric .assessment__rubric__question .question__title__copy, .step--student-training .student-training__assessment .assessment__rubric__question .question__title__copy, .openassessment .step--self-assessment .self-assessment__assessment .assessment__rubric__question .question__title__copy, .openassessment .step--peer-assessment .peer-assessment__assessment .assessment__rubric__question .question__title__copy, .openassessment .staff-assessment__assessment .assessment__rubric__question .question__title__copy {
-  margin-right: 10px;
+  margin-left: 10px;
   white-space: pre-wrap;
   display: inline;
 }
@@ -1468,7 +1468,7 @@ hr.divider,
 .step--response .step__rubric .question__answers, .step--student-training .student-training__assessment .question__answers, .openassessment .step--self-assessment .self-assessment__assessment .question__answers, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers, .openassessment .staff-assessment__assessment .question__answers {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .step--response .step__rubric .question__answers .answer, .step--student-training .student-training__assessment .question__answers .answer, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer, .openassessment .staff-assessment__assessment .question__answers .answer, .step--response .step__rubric .question__answers .answer--feedback, .step--student-training .student-training__assessment .question__answers .answer--feedback, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer--feedback, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer--feedback, .openassessment .staff-assessment__assessment .question__answers .answer--feedback {
   *zoom: 1;
@@ -1496,7 +1496,7 @@ hr.divider,
   color: #414141;
 }
 .step--response .step__rubric .question__answers .wrapper--input .answer__value, .step--student-training .student-training__assessment .question__answers .wrapper--input .answer__value, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--input .answer__value, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--input .answer__value, .openassessment .staff-assessment__assessment .question__answers .wrapper--input .answer__value {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .step--response .step__rubric .question__answers .wrapper--input .answer__value:checked + .answer__label, .step--student-training .student-training__assessment .question__answers .wrapper--input .answer__value:checked + .answer__label, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--input .answer__value:checked + .answer__label, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--input .answer__value:checked + .answer__label, .openassessment .staff-assessment__assessment .question__answers .wrapper--input .answer__value:checked + .answer__label {
   color: black;
@@ -1506,38 +1506,38 @@ hr.divider,
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .step--response .step__rubric .question__answers .wrapper--metadata, .step--student-training .student-training__assessment .question__answers .wrapper--metadata, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .wrapper--metadata:last-child, .step--student-training .student-training__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .step--response .step__rubric .question__answers .wrapper--metadata, .step--student-training .student-training__assessment .question__answers .wrapper--metadata, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .wrapper--metadata:last-child, .step--student-training .student-training__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .step--response .step__rubric .question__answers .wrapper--metadata, .step--student-training .student-training__assessment .question__answers .wrapper--metadata, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .wrapper--metadata:last-child, .step--student-training .student-training__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .wrapper--metadata:last-child, .openassessment .staff-assessment__assessment .question__answers .wrapper--metadata:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .step--response .step__rubric .question__answers .answer__tip, .step--student-training .student-training__assessment .question__answers .answer__tip, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip, .openassessment .staff-assessment__assessment .question__answers .answer__tip, .step--response .step__rubric .question__answers .answer__points, .step--student-training .student-training__assessment .question__answers .answer__points, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__points, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__points, .openassessment .staff-assessment__assessment .question__answers .answer__points {
@@ -1546,46 +1546,46 @@ hr.divider,
 .step--response .step__rubric .question__answers .answer__tip, .step--student-training .student-training__assessment .question__answers .answer__tip, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip, .openassessment .staff-assessment__assessment .question__answers .answer__tip {
   margin-bottom: 10px;
   white-space: pre-wrap;
-  margin-left: 20px;
+  margin-right: 20px;
   color: #414141;
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .step--response .step__rubric .question__answers .answer__tip, .step--student-training .student-training__assessment .question__answers .answer__tip, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip, .openassessment .staff-assessment__assessment .question__answers .answer__tip {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 3.5786636068%;
+    margin-right: 3.5786636068%;
     width: 74.1053340983%;
-    float: right;
+    float: left;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer__tip:last-child, .step--student-training .student-training__assessment .question__answers .answer__tip:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .staff-assessment__assessment .question__answers .answer__tip:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .step--response .step__rubric .question__answers .answer__tip, .step--student-training .student-training__assessment .question__answers .answer__tip, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip, .openassessment .staff-assessment__assessment .question__answers .answer__tip {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 3.5786636068%;
+    margin-right: 3.5786636068%;
     width: 74.1053340983%;
-    float: right;
+    float: left;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer__tip:last-child, .step--student-training .student-training__assessment .question__answers .answer__tip:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .staff-assessment__assessment .question__answers .answer__tip:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .step--response .step__rubric .question__answers .answer__tip, .step--student-training .student-training__assessment .question__answers .answer__tip, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip, .openassessment .staff-assessment__assessment .question__answers .answer__tip {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 3.5786636068%;
+    margin-right: 3.5786636068%;
     width: 74.1053340983%;
-    float: right;
+    float: left;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer__tip:last-child, .step--student-training .student-training__assessment .question__answers .answer__tip:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip:last-child, .openassessment .staff-assessment__assessment .question__answers .answer__tip:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .step--response .step__rubric .question__answers .answer__tip:after, .step--student-training .student-training__assessment .question__answers .answer__tip:after, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__tip:after, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__tip:after, .openassessment .staff-assessment__assessment .question__answers .answer__tip:after {
@@ -1596,72 +1596,72 @@ hr.divider,
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .step--response .step__rubric .question__answers .answer__points, .step--student-training .student-training__assessment .question__answers .answer__points, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__points, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__points, .openassessment .staff-assessment__assessment .question__answers .answer__points {
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: right;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .step--response .step__rubric .question__answers .answer__points, .step--student-training .student-training__assessment .question__answers .answer__points, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__points, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__points, .openassessment .staff-assessment__assessment .question__answers .answer__points {
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: right;
   }
 }
 @media screen and (min-width: 1300px) {
   .step--response .step__rubric .question__answers .answer__points, .step--student-training .student-training__assessment .question__answers .answer__points, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__points, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__points, .openassessment .staff-assessment__assessment .question__answers .answer__points {
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: right;
   }
 }
 .step--response .step__rubric .question__answers .answer__points__label, .step--student-training .student-training__assessment .question__answers .answer__points__label, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer__points__label, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer__points__label, .openassessment .staff-assessment__assessment .question__answers .answer__points__label {
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 5px;
   color: #414141;
 }
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .step--response .step__rubric .question__answers .answer .wrapper--input, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 4.8291579146%;
+    margin-right: 4.8291579146%;
     width: 100%;
   }
   .step--response .step__rubric .question__answers .answer .wrapper--input:last-child, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .step--response .step__rubric .question__answers .answer .wrapper--input, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 31.7615656014%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer .wrapper--input:last-child, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .step--response .step__rubric .question__answers .answer .wrapper--input, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 31.7615656014%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer .wrapper--input:last-child, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .step--response .step__rubric .question__answers .answer .wrapper--input, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 31.7615656014%;
     margin-bottom: 0;
   }
   .step--response .step__rubric .question__answers .answer .wrapper--input:last-child, .step--student-training .student-training__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer .wrapper--input:last-child, .openassessment .staff-assessment__assessment .question__answers .answer .wrapper--input:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .step--response .step__rubric .question__answers .answer--feedback .answer__label, .step--student-training .student-training__assessment .question__answers .answer--feedback .answer__label, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer--feedback .answer__label, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer--feedback .answer__label, .openassessment .staff-assessment__assessment .question__answers .answer--feedback .answer__label {
@@ -1669,7 +1669,7 @@ hr.divider,
 }
 .step--response .step__rubric .question__answers .answer--feedback .answer__value, .step--student-training .student-training__assessment .question__answers .answer--feedback .answer__value, .openassessment .step--self-assessment .self-assessment__assessment .question__answers .answer--feedback .answer__value, .openassessment .step--peer-assessment .peer-assessment__assessment .question__answers .answer--feedback .answer__value, .openassessment .staff-assessment__assessment .question__answers .answer--feedback .answer__value {
   min-height: 100px;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .has--hints {
@@ -1677,21 +1677,21 @@ hr.divider,
 }
 
 .ui-hint .icon {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .ui-hint:hover, .ui-hint:focus {
   color: #065683;
 }
 .ui-hint:after {
-  right: 0;
+  left: 0;
   display: block;
   white-space: normal;
   width: 200px;
   background: rgba(3, 3, 3, 0.75);
 }
 .ui-hint.hint--top:after {
-  right: 0;
-  margin-right: -20px;
+  left: 0;
+  margin-left: -20px;
 }
 
 .openassessment .wrapper--ui-staff {
@@ -1741,13 +1741,13 @@ hr.divider,
   color: white;
 }
 .openassessment .staff-info__summary .label {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .openassessment .openassessment_student_info_form {
   margin-bottom: 10px;
 }
 .openassessment .openassessment_student_info_form .action--submit-username {
-  margin-right: 0;
+  margin-left: 0;
 }
 .openassessment .staff-info__status__table, .openassessment .staff-info__classifierset__table {
   -webkit-border-radius: 2px;
@@ -1758,7 +1758,7 @@ hr.divider,
   word-break: initial;
 }
 .openassessment .staff-info__status__table .title, .openassessment .staff-info__classifierset__table .title {
-  text-align: right;
+  text-align: left;
   color: white;
   margin-bottom: 10px;
 }
@@ -1773,7 +1773,7 @@ hr.divider,
   padding: 10px 10px;
 }
 .openassessment .staff-info__status__table th, .openassessment .staff-info__status__table td[scope], .openassessment .staff-info__classifierset__table th, .openassessment .staff-info__classifierset__table td[scope] {
-  text-align: right;
+  text-align: left;
 }
 .openassessment .wrapper--staff-assessment {
   margin-top: 10px;
@@ -1807,7 +1807,7 @@ hr.divider,
   margin-top: 20px;
 }
 .openassessment .staff-assessment__assessment .assessment__rubric__question--feedback .question__title__copy {
-  margin-right: 0;
+  margin-left: 0;
   white-space: pre-wrap;
 }
 .openassessment .staff-assessment__assessment .assessment__rubric__question--feedback textarea {
@@ -1822,7 +1822,7 @@ hr.divider,
   margin-bottom: 0;
 }
 .openassessment .ui-staff .staff__grade__control .staff__grade__title {
-  text-align: right;
+  text-align: left;
   float: none;
   padding: 0 20px;
   display: block;
@@ -1842,7 +1842,7 @@ hr.divider,
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .ui-staff .staff__grade__control .staff__grade__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -40px;
   }
@@ -1850,7 +1850,7 @@ hr.divider,
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .ui-staff .staff__grade__control .staff__grade__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -40px;
   }
@@ -1858,7 +1858,7 @@ hr.divider,
 @media screen and (min-width: 1300px) {
   .openassessment .ui-staff .staff__grade__control .staff__grade__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -40px;
   }
@@ -1931,7 +1931,7 @@ hr.divider,
 }
 
 .openassessment {
-  direction: rtl;
+  direction: ltr;
 }
 .openassessment .openassessment__title {
   *zoom: 1;
@@ -1963,41 +1963,41 @@ hr.divider,
 }
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .openassessment .list--actions {
-    text-align: left;
+    text-align: right;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .list--actions {
-    text-align: left;
+    text-align: right;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .list--actions {
-    text-align: left;
+    text-align: right;
   }
 }
 @media screen and (min-width: 1300px) {
   .openassessment .list--actions {
-    text-align: left;
+    text-align: right;
   }
 }
 .openassessment .list--actions.has--error .message {
   margin-bottom: 20px;
-  text-align: right;
+  text-align: left;
 }
 .openassessment .list--actions .action--submit {
-  margin-right: 10px;
+  margin-left: 10px;
   margin-top: 10px;
 }
 .openassessment .list--actions .action--submit .copy, .openassessment .list--actions .action--submit .icon {
   display: inline;
 }
 .openassessment .list--actions .action--submit .fa-caret-right:before {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .openassessment .openassessment__steps {
   counter-reset: item;
@@ -2013,22 +2013,22 @@ hr.divider,
   vertical-align: middle;
 }
 .openassessment .openassessment__steps__step .step__title .wrapper--copy {
-  margin-right: 20px;
-  border-right: 1px solid #d9d9d9;
-  padding-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #d9d9d9;
+  padding-left: 20px;
 }
 @media screen and (max-width: 529px) {
   .openassessment .openassessment__steps__step .step__title .wrapper--copy {
-    margin-right: 0;
-    border-right: none;
-    padding-right: 0;
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .openassessment .openassessment__steps__step .step__title .wrapper--copy {
-    margin-right: 0;
-    border-right: none;
-    padding-right: 0;
+    margin-left: 0;
+    border-left: none;
+    padding-left: 0;
   }
 }
 .openassessment .openassessment__steps__step .step__title .step__counter {
@@ -2078,7 +2078,7 @@ hr.divider,
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .openassessment__steps__step .step__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -32px;
   }
@@ -2086,7 +2086,7 @@ hr.divider,
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .openassessment__steps__step .step__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -32px;
   }
@@ -2094,7 +2094,7 @@ hr.divider,
 @media screen and (min-width: 1300px) {
   .openassessment .openassessment__steps__step .step__status {
     margin-top: 0;
-    float: left;
+    float: right;
     position: relative;
     top: -32px;
   }
@@ -2128,7 +2128,7 @@ hr.divider,
 .openassessment .openassessment__steps__step .step__status .icon {
   display: inline-block;
   vertical-align: baseline;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .openassessment .openassessment__steps__step .step__status .copy {
   color: #414141;
@@ -2280,11 +2280,11 @@ hr.divider,
   -webkit-transition: all 0.25s ease-in-out 0s;
   -moz-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .openassessment .ui-slidable__container.is--initially--collapsed .ui-slidable__content {
   display: none;
@@ -2305,11 +2305,11 @@ hr.divider,
   -webkit-transition: all 0.25s ease-in-out 0s;
   -moz-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .openassessment .ui-slidable__container .ui-slidable {
   background: none;
@@ -2334,8 +2334,8 @@ hr.divider,
   position: relative;
   margin: 10px 0;
   border: 1px solid #d9d9d9;
-  border-right: 10px solid #b9c1c8;
-  padding-right: 30px;
+  border-left: 10px solid #b9c1c8;
+  padding-left: 30px;
 }
 .openassessment .submission__answer__part__prompt__copy {
   color: #414141;
@@ -2412,7 +2412,7 @@ hr.divider,
   margin-top: 20px;
 }
 .openassessment .step--peer-assessment .peer-assessment__assessment .assessment__rubric__question--feedback .question__title__copy {
-  margin-right: 0;
+  margin-left: 0;
   white-space: pre-wrap;
 }
 .openassessment .step--peer-assessment .peer-assessment__assessment .assessment__rubric__question--feedback textarea {
@@ -2445,7 +2445,7 @@ hr.divider,
   margin-top: 20px;
 }
 .openassessment .step--self-assessment .self-assessment__assessment .assessment__rubric__question--feedback .question__title__copy {
-  margin-right: 0;
+  margin-left: 0;
   white-space: pre-wrap;
 }
 .openassessment .step--self-assessment .self-assessment__assessment .assessment__rubric__question--feedback textarea {
@@ -2453,73 +2453,73 @@ hr.divider,
 }
 @media screen and (max-width: 529px) {
   .openassessment .step--grade .step__title {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 7.4229703521%;
+    margin-right: 7.4229703521%;
     width: 100%;
   }
   .openassessment .step--grade .step__title:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .openassessment .step--grade .step__title {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 4.8291579146%;
+    margin-right: 4.8291579146%;
     width: 100%;
   }
   .openassessment .step--grade .step__title:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .step--grade .step__title {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .step--grade .step__title:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .step--grade .step__title {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .step--grade .step__title:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .openassessment .step--grade .step__title {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .step--grade .step__title:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .openassessment .step--grade .step__title .step__counter, .openassessment .step--grade .step__title .step__counter:before {
   display: none;
 }
 .openassessment .step--grade .step__title .wrapper--copy {
-  margin-right: 0;
-  border-right: none;
-  padding-right: 0;
+  margin-left: 0;
+  border-left: none;
+  padding-left: 0;
 }
 .openassessment .step--grade .step__title .step__label, .openassessment .step--grade .step__title .grade__value {
   display: inline;
   vertical-align: middle;
 }
 .openassessment .step--grade .step__title .step__label {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .openassessment .step--grade .grade__value__description {
   margin-bottom: 20px;
@@ -2582,26 +2582,26 @@ hr.divider,
   vertical-align: middle;
 }
 .openassessment .submission__peer-evaluations__questions .question__title__copy {
-  margin-right: 10px;
+  margin-left: 10px;
   white-space: pre-wrap;
 }
 .openassessment .submission__peer-evaluations__questions .question__score {
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-left: 20px;
 }
 .openassessment .submission__peer-evaluations__questions .question__score__value {
   color: #414141;
 }
 .openassessment .submission__peer-evaluations__questions .question__score__value:after {
   content: "/";
-  margin-right: 5px;
+  margin-left: 5px;
   color: #414141;
 }
 .openassessment .submission__peer-evaluations__questions .question__score__potential {
   color: #414141;
 }
 .openassessment .submission__peer-evaluations__questions .question__score__potential .unit {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .openassessment .submission__peer-evaluations__questions .question__answers {
   *zoom: 1;
@@ -2619,8 +2619,8 @@ hr.divider,
   margin-bottom: 20px;
 }
 .openassessment .submission__peer-evaluations__questions .answer.self-assessment {
-  border-right: 5px solid #f5f6f7;
-  padding-right: 20px;
+  border-left: 5px solid #f5f6f7;
+  padding-left: 20px;
 }
 .openassessment .submission__peer-evaluations__questions .answer.self-assessment .answer__source {
   color: #d9d9d9;
@@ -2655,50 +2655,50 @@ hr.divider,
 }
 @media screen and (min-width: 530px) and (max-width: 759px) {
   .openassessment .answer--feedback {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 4.8291579146%;
+    margin-right: 4.8291579146%;
     width: 100%;
   }
   .openassessment .answer--feedback:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 924px) {
   .openassessment .answer--feedback {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .answer--feedback:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 925px) and (max-width: 1299px) {
   .openassessment .answer--feedback {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .answer--feedback:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .openassessment .answer--feedback {
-    float: right;
+    float: left;
     display: block;
-    margin-left: 2.3576515979%;
+    margin-right: 2.3576515979%;
     width: 100%;
   }
   .openassessment .answer--feedback:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .openassessment .answer--feedback .answer--feedback__title__copy {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .openassessment .answer--feedback .answer--feedback__content {
   margin-top: 5px;
@@ -2725,7 +2725,7 @@ hr.divider,
   vertical-align: middle;
 }
 .openassessment .submission__feedback__title__copy {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .openassessment .submission__feeedback__content {
   margin-bottom: 20px;
@@ -2761,7 +2761,7 @@ hr.divider,
   padding: 0;
 }
 .openassessment .action--submit {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .machineBoxs {
@@ -2795,6 +2795,10 @@ hr.divider,
 
 .mypadding {
   padding: 50px !important;
+}
+
+.myclick {
+  width: 100px !important;
 }
 
 .open-response-assessment-block table {
@@ -3242,7 +3246,7 @@ hr.divider,
   height: calc(100% - 55px);
 }
 #openassessment-editor #oa_editor_window_title {
-  float: right;
+  float: left;
 }
 #openassessment-editor input[type=number] {
   background-image: -moz-linear-gradient(#F2F2F2, #FFF);
@@ -3316,12 +3320,12 @@ hr.divider,
 }
 #openassessment-editor #openassessment_validation_alert {
   width: 100%;
-  -webkit-border-top-right-radius: 2px;
-  -moz-border-topright-radius: 2px;
-  border-top-right-radius: 2px;
   -webkit-border-top-left-radius: 2px;
   -moz-border-topleft-radius: 2px;
   border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-topright-radius: 2px;
+  border-top-right-radius: 2px;
   background-color: #333333;
   border-bottom: 3px solid #F0CC00;
   padding: 10px;
@@ -3331,14 +3335,14 @@ hr.divider,
 }
 #openassessment-editor #openassessment_validation_alert .openassessment_alert_icon {
   position: absolute;
-  right: 3%;
+  left: 3%;
 }
 #openassessment-editor #openassessment_validation_alert .openassessment_alert_icon svg {
   width: 3em;
 }
 #openassessment-editor #openassessment_validation_alert .openassessment_alert_header {
   width: 85%;
-  margin: 0 10% 0 5%;
+  margin: 0 5% 0 10%;
 }
 #openassessment-editor #openassessment_validation_alert .openassessment_alert_header .openassessment_alert_title {
   width: auto;
@@ -3352,7 +3356,7 @@ hr.divider,
   display: inline-block;
   position: absolute;
   top: 14px;
-  left: 0px;
+  right: 0px;
   color: #e9e9e9;
   font-size: 1.5em;
   text-align: center;
@@ -3390,7 +3394,7 @@ hr.divider,
 }
 #openassessment-editor #oa_basic_settings_editor #openassessment_title_editor_wrapper label {
   width: 25%;
-  text-align: right;
+  text-align: left;
 }
 #openassessment-editor #oa_basic_settings_editor #openassessment_title_editor_wrapper input {
   width: 45%;
@@ -3406,7 +3410,7 @@ hr.divider,
   height: 40px;
 }
 #openassessment-editor #ai_training_examples {
-  margin: 5px 10px 10px 20px;
+  margin: 5px 20px 10px 10px;
   height: 300px;
   width: calc(100% - 20px);
   resize: none;
@@ -3416,7 +3420,7 @@ hr.divider,
   padding: 5px 10px;
 }
 #openassessment-editor .openassessment_assessment_module_settings_editor {
-  padding: 0 0 10px 15px;
+  padding: 0 15px 10px 0;
   margin: 10px;
   border: 1px solid #dbdbdc;
   -webkit-border-radius: 3px;
@@ -3432,11 +3436,11 @@ hr.divider,
   background: center rgba(164, 165, 168, 0.25);
   display: block;
   top: 0px;
-  left: 0px;
+  right: 0px;
   z-index: 10;
   width: 15px;
   height: 100%;
-  border-right: 1px solid #dbdbdc;
+  border-left: 1px solid #dbdbdc;
   cursor: move;
   -webkit-transition: none;
   -moz-transition: none;
@@ -3481,21 +3485,21 @@ hr.divider,
 }
 #openassessment-editor .openassessment_inclusion_wrapper {
   margin: 0;
-  padding: 15px 8px 5px 5px;
-  -webkit-border-top-right-radius: 2px;
-  -moz-border-topright-radius: 2px;
-  border-top-right-radius: 2px;
+  padding: 15px 5px 5px 8px;
   -webkit-border-top-left-radius: 2px;
   -moz-border-topleft-radius: 2px;
   border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-topright-radius: 2px;
+  border-top-right-radius: 2px;
 }
 #openassessment-editor .openassessment_inclusion_wrapper label {
   font-size: 19px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 #openassessment-editor label {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 #openassessment-editor .xblock_actions {
   background-color: #c8c9cb;
@@ -3516,7 +3520,7 @@ hr.divider,
   color: #626365;
 }
 #openassessment-editor .action.expand-collapse {
-  float: right;
+  float: left;
 }
 #openassessment-editor .action.expand-collapse .ui-toggle-expansion {
   color: #626365;
@@ -3527,7 +3531,7 @@ hr.divider,
   cursor: pointer;
 }
 #openassessment-editor .openassessment_container_header_title_box {
-  float: right;
+  float: left;
   width: 80%;
   display: inline-block;
 }
@@ -3538,7 +3542,7 @@ hr.divider,
 }
 #openassessment-editor .openassessment_container_remove_button, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_option_header .openassessment_option_header_remove, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_remove_button {
   cursor: pointer;
-  float: left;
+  float: right;
 }
 #openassessment-editor .openassessment_container_remove_button h2:after, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_option_header .openassessment_option_header_remove h2:after, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_remove_button h2:after {
   font-family: FontAwesome;
@@ -3550,7 +3554,7 @@ hr.divider,
 #openassessment-editor .openassessment_container_remove_button h2, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_option_header .openassessment_option_header_remove h2, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_remove_button h2 {
   text-transform: uppercase;
   font-size: 80%;
-  float: left;
+  float: right;
   display: inline-block;
   padding: 3px 8px 3px 13px;
 }
@@ -3571,8 +3575,8 @@ hr.divider,
 #openassessment-editor .openassessment_container_add_button h6:before {
   font-family: "FontAwesome";
   display: inline-block;
-  margin-right: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
   width: auto;
   height: auto;
   content: "";
@@ -3834,7 +3838,7 @@ hr.divider,
   line-height: 28px;
 }
 #openassessment-editor #oa_rubric_editor_wrapper #openassessment_rubric_clone .ui-accordion-header #rubric-reuse-collapse-icon::after {
-  float: left;
+  float: right;
   font-family: FontAwesome;
   display: inline-block;
   color: inherit;
@@ -3903,7 +3907,7 @@ hr.divider,
   color: #009fe6;
   background-color: white;
   padding: 7.5px;
-  margin: 10px 20px 10px 10px;
+  margin: 10px 10px 10px 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3922,8 +3926,8 @@ hr.divider,
   color: white;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry {
-  padding-left: 0;
-  margin-left: 10px;
+  padding-right: 0;
+  margin-right: 10px;
   overflow: auto;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings label {
@@ -3933,13 +3937,13 @@ hr.divider,
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings label input {
   font-size: 11px;
-  float: left;
+  float: right;
   width: 70%;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings .openassessment_criterion_prompt {
   padding: 10px;
   width: 70%;
-  float: left;
+  float: right;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings .openassessment_criterion_prompt.openassessment_highlighted_field {
   border: 2px solid red;
@@ -3958,18 +3962,18 @@ hr.divider,
   width: 100%;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_feedback_wrapper label select {
-  float: left;
-  margin-left: 24%;
+  float: right;
+  margin-right: 24%;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_feedback_wrapper .openassessment_criterion_feedback_direction label {
-  margin-right: 15px;
+  margin-left: 15px;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option {
-  padding: 5px 15px 5px 5px;
+  padding: 5px 5px 5px 15px;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_option_header {
   background-color: rgba(164, 165, 168, 0.25);
-  padding: 5px 10px 5px 5px;
+  padding: 5px 5px 5px 10px;
   margin: 5px 5px 8px 5px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3980,14 +3984,14 @@ hr.divider,
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_option_header .openassessment_option_header_title {
   cursor: default;
-  float: right;
-  padding: 2.5px 5px 0 0;
+  float: left;
+  padding: 2.5px 0 0 5px;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_point_wrapper {
   width: 30%;
   border-top: none;
-  padding: 10px 0px 10px 5px;
-  float: right;
+  padding: 10px 5px 10px 0px;
+  float: left;
   margin: 0;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_point_wrapper .wrapper-comp-setting {
@@ -3995,21 +3999,21 @@ hr.divider,
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_point_wrapper label {
   width: 100%;
-  padding-right: calc((100% - 150px)/2);
+  padding-left: calc((100% - 150px)/2);
   margin: 0;
-  float: left;
+  float: right;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_point_wrapper label input {
   min-width: 50px;
   padding: 10px;
-  float: left;
+  float: right;
   width: 30%;
   font-size: 11px;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_name_wrapper {
-  float: right;
+  float: left;
   width: 70%;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 10px 10px 20px;
   border-top: 0;
   margin: 0;
 }
@@ -4023,24 +4027,24 @@ hr.divider,
   padding: 10px;
   font-size: 11px;
   width: 56%;
-  float: left;
+  float: right;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_explanation_wrapper {
-  padding: 15px 20px 0px 5px;
+  padding: 15px 5px 0px 20px;
   width: 100%;
   display: inline-block;
   margin: 0;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_explanation_wrapper label {
   width: 100%;
-  text-align: right;
+  text-align: left;
   margin: 0;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion_option .openassessment_criterion_option_explanation_wrapper label textarea {
   padding: 10px;
   height: 70px;
   width: 69.5%;
-  float: left;
+  float: right;
 }
 #openassessment-editor #oa_rubric_editor_wrapper .openassessment_large_text_input, #openassessment-editor #oa_rubric_editor_wrapper #openassessment_rubric_feedback_wrapper textarea, #openassessment-editor #oa_rubric_editor_wrapper .openassessment_criterion .openassessment_criterion_basic_editor .comp-setting-entry .wrapper-comp-settings .openassessment_criterion_prompt {
   height: 70px;
@@ -4064,7 +4068,7 @@ hr.divider,
 }
 #openassessment-editor #oa_rubric_editor_wrapper #openassessment_rubric_feedback_wrapper #openassessment_rubric_feedback_header {
   background-color: rgba(164, 165, 168, 0.25);
-  padding: 7.5px 15px 7.5px 7.5px;
+  padding: 7.5px 7.5px 7.5px 15px;
   margin: 10px 10px 0 10px;
   border-radius: 3px;
 }
@@ -4074,11 +4078,11 @@ hr.divider,
 #openassessment-editor #oa_rubric_editor_wrapper #openassessment_rubric_feedback_wrapper textarea {
   padding: 10px;
   width: 70%;
-  float: left;
+  float: right;
 }
 #openassessment-editor #oa_schedule_editor_wrapper .openassessment_schedule_setting_header {
   font-size: 19px;
-  margin: 15px 30px 10px 0;
+  margin: 15px 0 10px 30px;
 }
 #openassessment-editor #oa_schedule_editor_wrapper li:nth-child(2) {
   border-bottom: 1px solid #e5e5e5;
@@ -4126,14 +4130,14 @@ hr.divider,
   text-transform: uppercase;
   width: 50%;
   display: inline-block;
-  float: right;
+  float: left;
   padding-top: 2px;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_header .openassessment_training_example_remove {
-  padding: 3px 7px 3px 5px;
+  padding: 3px 5px 3px 7px;
   cursor: pointer;
   border-radius: 4px;
-  float: left;
+  float: right;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_header .openassessment_training_example_remove h2:after {
   font-family: FontAwesome;
@@ -4145,7 +4149,7 @@ hr.divider,
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_header .openassessment_training_example_remove h2 {
   text-transform: uppercase;
   font-size: 80%;
-  float: left;
+  float: right;
   display: inline-block;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_header .openassessment_training_example_remove:hover {
@@ -4160,7 +4164,7 @@ hr.divider,
   width: 58%;
   display: inline-block;
   position: absolute;
-  right: 15px;
+  left: 15px;
   height: 100%;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_body .openassessment_training_example_essay_wrapper textarea {
@@ -4176,13 +4180,13 @@ hr.divider,
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   color: #4c4c4c;
-  margin: 5px 10px 0 15px;
+  margin: 5px 15px 0 10px;
   width: calc(100% - 25px);
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_body .openassessment_training_example_scored_rubric {
   width: 40%;
   display: inline-block;
-  float: left;
+  float: right;
   min-height: 150px;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_body .openassessment_training_example_scored_rubric .openassessment_training_example_criteria_selections .comp-setting-entry {
@@ -4194,11 +4198,11 @@ hr.divider,
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_body .openassessment_training_example_scored_rubric .openassessment_training_example_criteria_selections .comp-setting-entry label {
   width: 100%;
-  margin-right: 0;
+  margin-left: 0;
 }
 #student_training_settings_editor .openassessment_training_example .openassessment_training_example_body .openassessment_training_example_scored_rubric .openassessment_training_example_criteria_selections .comp-setting-entry label select {
   width: 60%;
-  float: left;
+  float: right;
 }
 #student_training_settings_editor .openassessment_add_training_example {
   color: #009fe6;
@@ -4228,7 +4232,7 @@ hr.divider,
 
 .step--response .action--upload {
   text-align: center;
-  float: left;
+  float: right;
   display: inline-block;
   margin: 10px 0;
   box-shadow: none;
@@ -4285,7 +4289,7 @@ hr.divider,
   vertical-align: middle;
 }
 .step--response .step__rubric #read_only___assessment__rubric__header {
-  margin-right: 10px;
+  margin-left: 10px;
   white-space: pre-wrap;
   display: inline;
 }
@@ -4308,7 +4312,7 @@ hr.divider,
 .staff-assessment__display__image,
 .submission__answer__display__image {
   max-height: 400px;
-  text-align: right;
+  text-align: left;
   overflow: auto;
 }
 .self-assessment__display__image img,
@@ -4331,16 +4335,16 @@ hr.divider,
   display: none;
 }
 .openassessment .step--leaderboard .step__title .wrapper--copy {
-  margin-right: 0;
-  padding-right: 0;
-  border-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
 }
 .openassessment .step--leaderboard .step__label, .openassessment .step--leaderboard .grade__value {
   display: inline-block;
   vertical-align: middle;
 }
 .openassessment .step--leaderboard .step__label {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .openassessment .step--leaderboard .list.leaderboard__score__list {
   list-style-type: none;
@@ -4356,17 +4360,17 @@ hr.divider,
   font-size: 16px;
   min-width: 35px;
   text-align: center;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-topleft-radius: 2px;
-  border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
   -moz-border-topright-radius: 2px;
   border-top-right-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-topleft-radius: 2px;
+  border-top-left-radius: 2px;
 }
 .openassessment .step--leaderboard .list.leaderboard__score__list li.leaderboard__score__item .leaderboard__score__image {
   max-height: 150px;
   max-width: 100%;
-  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 .openassessment .step--leaderboard .list.leaderboard__score__list li.leaderboard__score__item .leaderboard__score__title {
@@ -4374,7 +4378,7 @@ hr.divider,
   color: #414141;
   text-transform: uppercase;
   display: inline-block;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 .openassessment .step--leaderboard .list.leaderboard__score__list li.leaderboard__score__item .leaderboard__answer {
   border-top: 2px solid #626365;
@@ -4410,7 +4414,7 @@ hr.divider,
   margin-left: 5px;
 }
 .openassessment .openassessment__steps .openassessment__steps__step .step__header .step__title {
-  text-align: right;
+  text-align: left;
   float: none;
   margin-top: 0 !important;
 }
@@ -4434,14 +4438,14 @@ hr.divider,
 .openassessment .leaderboard__answer .peer-assessment__display__image .submission__answer__part__text__title,
 .openassessment .leaderboard__answer .staff-assessment__display__image .submission__answer__part__text__title,
 .openassessment .leaderboard__answer .submission__answer__display__image .submission__answer__part__text__title {
-  text-align: right;
+  text-align: left;
   float: none;
   font-size: inherit;
   margin: 0;
 }
 .openassessment .list--actions {
   list-style: none !important;
-  padding-right: 0 !important;
+  padding-left: 0 !important;
   text-indent: 0 !important;
 }
 .openassessment .list--actions li {
@@ -4456,14 +4460,14 @@ hr.divider,
 }
 .openassessment .step--peer-assessment .list--peer-assessments {
   list-style: none outside none !important;
-  padding-right: 0;
+  padding-left: 0;
 }
 .openassessment .self-assessment__display__title, .openassessment .peer-assessment__display__title {
   margin-bottom: 10px !important;
   color: #414141 !important;
 }
 .openassessment .question__answers {
-  padding-right: 0;
+  padding-left: 0;
 }
 .openassessment .question__title.ui-slidable .question__title__copy {
   color: inherit !important;
@@ -5033,48 +5037,48 @@ a > .paragon-styles code {
   max-width: 100%;
 }
 .paragon-styles .col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%;
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
 }
 .paragon-styles .col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
 }
 .paragon-styles .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
 .paragon-styles .col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
 }
 .paragon-styles .col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%;
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
 }
 .paragon-styles .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 .paragon-styles .col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%;
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
 }
 .paragon-styles .col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
 }
 .paragon-styles .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
 }
 .paragon-styles .col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%;
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
 }
 .paragon-styles .col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%;
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
 }
 .paragon-styles .col-12 {
   flex: 0 0 100%;
@@ -5126,37 +5130,37 @@ a > .paragon-styles code {
   order: 12;
 }
 .paragon-styles .offset-1 {
-  margin-left: 8.3333333333%;
+  margin-left: 8.33333333%;
 }
 .paragon-styles .offset-2 {
-  margin-left: 16.6666666667%;
+  margin-left: 16.66666667%;
 }
 .paragon-styles .offset-3 {
   margin-left: 25%;
 }
 .paragon-styles .offset-4 {
-  margin-left: 33.3333333333%;
+  margin-left: 33.33333333%;
 }
 .paragon-styles .offset-5 {
-  margin-left: 41.6666666667%;
+  margin-left: 41.66666667%;
 }
 .paragon-styles .offset-6 {
   margin-left: 50%;
 }
 .paragon-styles .offset-7 {
-  margin-left: 58.3333333333%;
+  margin-left: 58.33333333%;
 }
 .paragon-styles .offset-8 {
-  margin-left: 66.6666666667%;
+  margin-left: 66.66666667%;
 }
 .paragon-styles .offset-9 {
   margin-left: 75%;
 }
 .paragon-styles .offset-10 {
-  margin-left: 83.3333333333%;
+  margin-left: 83.33333333%;
 }
 .paragon-styles .offset-11 {
-  margin-left: 91.6666666667%;
+  margin-left: 91.66666667%;
 }
 @media (min-width: 576px) {
   .paragon-styles .col-sm {
@@ -5194,48 +5198,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-sm-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-sm-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-sm-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-sm-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-sm-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-sm-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-sm-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-sm-12 {
     flex: 0 0 100%;
@@ -5290,37 +5294,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-sm-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-sm-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-sm-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-sm-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-sm-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-sm-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-sm-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-sm-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-sm-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-sm-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-sm-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 768px) {
@@ -5359,48 +5363,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-md-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-md-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-md-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-md-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-md-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-md-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-md-12 {
     flex: 0 0 100%;
@@ -5455,37 +5459,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-md-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-md-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-md-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-md-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-md-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-md-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-md-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-md-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-md-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-md-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-md-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 992px) {
@@ -5524,48 +5528,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-lg-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-lg-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-lg-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-lg-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-lg-12 {
     flex: 0 0 100%;
@@ -5620,37 +5624,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-lg-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-lg-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-lg-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-lg-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-lg-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-lg-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-lg-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-lg-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-lg-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-lg-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-lg-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 @media (min-width: 1200px) {
@@ -5689,48 +5693,48 @@ a > .paragon-styles code {
     max-width: 100%;
   }
   .paragon-styles .col-xl-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
   }
   .paragon-styles .col-xl-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
   }
   .paragon-styles .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
   .paragon-styles .col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .paragon-styles .col-xl-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
   }
   .paragon-styles .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .paragon-styles .col-xl-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
   }
   .paragon-styles .col-xl-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
   }
   .paragon-styles .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
   .paragon-styles .col-xl-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
   }
   .paragon-styles .col-xl-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
   }
   .paragon-styles .col-xl-12 {
     flex: 0 0 100%;
@@ -5785,37 +5789,37 @@ a > .paragon-styles code {
     margin-left: 0;
   }
   .paragon-styles .offset-xl-1 {
-    margin-left: 8.3333333333%;
+    margin-left: 8.33333333%;
   }
   .paragon-styles .offset-xl-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66666667%;
   }
   .paragon-styles .offset-xl-3 {
     margin-left: 25%;
   }
   .paragon-styles .offset-xl-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33333333%;
   }
   .paragon-styles .offset-xl-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66666667%;
   }
   .paragon-styles .offset-xl-6 {
     margin-left: 50%;
   }
   .paragon-styles .offset-xl-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33333333%;
   }
   .paragon-styles .offset-xl-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66666667%;
   }
   .paragon-styles .offset-xl-9 {
     margin-left: 75%;
   }
   .paragon-styles .offset-xl-10 {
-    margin-left: 83.3333333333%;
+    margin-left: 83.33333333%;
   }
   .paragon-styles .offset-xl-11 {
-    margin-left: 91.6666666667%;
+    margin-left: 91.66666667%;
   }
 }
 .paragon-styles .table {
@@ -6162,10 +6166,6 @@ a > .paragon-styles code {
   background-color: transparent;
   border: 0;
 }
-.paragon-styles .form-control:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #495057;
-}
 .paragon-styles .form-control:focus {
   color: #495057;
   background-color: white;
@@ -6186,6 +6186,10 @@ a > .paragon-styles code {
 .paragon-styles input[type=datetime-local].form-control,
 .paragon-styles input[type=month].form-control {
   appearance: none;
+}
+.paragon-styles select.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #495057;
 }
 .paragon-styles select.form-control:focus::-ms-value {
   color: #495057;
@@ -6329,7 +6333,7 @@ a > .paragon-styles code {
 }
 .was-validated .paragon-styles .form-control:valid, .paragon-styles .form-control.is-valid {
   border-color: #178253;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem) !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23178253' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
@@ -6339,13 +6343,17 @@ a > .paragon-styles code {
   border-color: #178253;
   box-shadow: 0 0 0 0.2rem rgba(23, 130, 83, 0.25);
 }
+.was-validated .paragon-styles select.form-control:valid, .paragon-styles select.form-control.is-valid {
+  padding-right: 3rem !important;
+  background-position: right 1.5rem center;
+}
 .was-validated .paragon-styles textarea.form-control:valid, .paragon-styles textarea.form-control.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 .was-validated .paragon-styles .custom-select:valid, .paragon-styles .custom-select.is-valid {
   border-color: #178253;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
+  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem) !important;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23495057' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23178253' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
 }
 .was-validated .paragon-styles .custom-select:valid:focus, .paragon-styles .custom-select.is-valid:focus {
@@ -6415,7 +6423,7 @@ a > .paragon-styles code {
 }
 .was-validated .paragon-styles .form-control:invalid, .paragon-styles .form-control.is-invalid {
   border-color: #C32D3A;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem) !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23C32D3A' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23C32D3A' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
@@ -6425,13 +6433,17 @@ a > .paragon-styles code {
   border-color: #C32D3A;
   box-shadow: 0 0 0 0.2rem rgba(195, 45, 58, 0.25);
 }
+.was-validated .paragon-styles select.form-control:invalid, .paragon-styles select.form-control.is-invalid {
+  padding-right: 3rem !important;
+  background-position: right 1.5rem center;
+}
 .was-validated .paragon-styles textarea.form-control:invalid, .paragon-styles textarea.form-control.is-invalid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 .was-validated .paragon-styles .custom-select:invalid, .paragon-styles .custom-select.is-invalid {
   border-color: #C32D3A;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
+  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem) !important;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23495057' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23C32D3A' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23C32D3A' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
 }
 .was-validated .paragon-styles .custom-select:invalid:focus, .paragon-styles .custom-select.is-invalid:focus {
@@ -8948,18 +8960,24 @@ a > .paragon-styles code {
   display: flex;
   align-items: center;
 }
-.paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label, .paragon-styles .input-group > .custom-file:not(:first-child) .custom-file-label {
+.paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label, .paragon-styles .input-group > .custom-file:not(:last-child) .custom-file-label::after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.paragon-styles .input-group > .custom-file:not(:first-child) .custom-file-label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 .paragon-styles .input-group:not(.has-validation) > .form-control:not(:last-child),
 .paragon-styles .input-group:not(.has-validation) > .custom-select:not(:last-child),
+.paragon-styles .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label,
 .paragon-styles .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .paragon-styles .input-group.has-validation > .form-control:nth-last-child(n+3),
 .paragon-styles .input-group.has-validation > .custom-select:nth-last-child(n+3),
+.paragon-styles .input-group.has-validation > .custom-file:nth-last-child(n+3) .custom-file-label,
 .paragon-styles .input-group.has-validation > .custom-file:nth-last-child(n+3) .custom-file-label::after {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -11429,8 +11447,11 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   align-items: center;
   justify-content: center;
   width: 15%;
+  padding: 0;
   color: white;
   text-align: center;
+  background: none;
+  border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
@@ -11524,7 +11545,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
@@ -11548,7 +11569,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
@@ -11967,7 +11988,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   border: 0;
 }
 .paragon-styles .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
+  padding-top: 42.85714286%;
 }
 .paragon-styles .embed-responsive-16by9::before {
   padding-top: 56.25%;
@@ -11979,7 +12000,7 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
   padding-top: 100%;
 }
 .paragon-styles .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
+  padding-top: 42.85714286%;
 }
 .paragon-styles .embed-responsive-16by9::before {
   padding-top: 56.25%;
@@ -14639,9 +14660,6 @@ a.paragon-styles .badge-gray:focus, a.paragon-styles .badge-gray.focus {
 .paragon-styles blockquote {
     border: 1px solid #adb5bd;
     page-break-inside: avoid;
-  }
-  .paragon-styles thead {
-    display: table-header-group;
   }
   .paragon-styles tr,
 .paragon-styles img {

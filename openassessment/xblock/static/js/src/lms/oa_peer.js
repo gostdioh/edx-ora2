@@ -160,6 +160,25 @@ export class PeerView {
         this.rubric.changesExistCallback($.proxy(view.assessmentRubricChanges, view));
       }
 
+     sel.find('.myclick').click(
+       (eventObject)=>{
+         alert('clicked'+eventObject.currentTarget.value)
+         sel.find('.myclick').each(function(){
+           if ( $(this)[0]!= eventObject.currentTarget){
+            $(this).removeClass('active')
+           }
+          
+         })
+         sel.find('.myclick').each(function(){
+          if ( $(this)[0]!= eventObject.currentTarget){
+           $(this).attr('aria-pressed',"false")
+          }
+         })
+        
+
+       }
+     )
+
       // Install a click handler for assessment
       sel.find('.peer-assessment--001__assessment__submit').click(
         (eventObject) => {

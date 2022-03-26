@@ -157,6 +157,11 @@ def _serialize_criteria(criteria_root, criteria_list):
         criterion_prompt = etree.SubElement(criterion_el, 'prompt')
         criterion_prompt.text = str(criterion.get('prompt', ''))
 
+        criterion_quick = etree.SubElement(criterion_el, 'quick')
+        criterion_quick.text = str(criterion.get('quick', ''))
+
+
+
         # Criterion feedback disabled, optional, or required
         # If disabled, do not set the attribute.
         if criterion.get('feedback') in ["optional", "required"]:
@@ -402,6 +407,11 @@ def _parse_criteria_xml(criteria_root):
             criterion_dict['prompt'] = _safe_get_text(criterion_prompt)
         else:
             raise UpdateFromXmlError('Every "criterion" element must contain a "prompt" element.')
+
+
+        criterion_quick= criterion.find('quick')
+        if criterion_quick is not None:
+            criterion_dict['quick']= _safe_get_text(criterion_dict)
 
         # Criterion feedback (disabled, optional, or required)
         criterion_feedback = criterion.get('feedback', 'disabled')

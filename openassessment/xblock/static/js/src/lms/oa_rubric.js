@@ -90,8 +90,18 @@ export class Rubric {
   optionsSelected(optionsSelected) {
     const selector = 'input[type=radio]';
     const rubric = this;
+    const options = {};
+    $('.myclick', this.element).filter('.active').each((index,sel)=>{
+      options[rubric.getCriterionName(sel)] = sel.value;
+    })
+
+
+    return options
+
+
+
     if (typeof optionsSelected === 'undefined') {
-      const options = {};
+      
       $(`${selector}:checked`, this.element).each(
         (index, sel) => {
           options[rubric.getCriterionName(sel)] = sel.value;
@@ -142,6 +152,9 @@ export class Rubric {
 
     * */
   canSubmit() {
+
+    return true
+
     const numChecked = $('input[type=radio]:checked', this.element).length;
     const numAvailable = $('.field--radio.assessment__rubric__question.has--options', this.element).length;
     let completedRequiredComments = true;
@@ -178,6 +191,7 @@ export class Rubric {
      * @return {boolean} true if unsubmitted changes exist.
      */
   changesExist() {
+    return true
     const numChecked = $('input[type=radio]:checked', this.element).length;
     let textExists = false;
 

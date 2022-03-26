@@ -74,3 +74,14 @@ bootstrap 如引用 cdn, 其也會引用 cdn 的jquery, 但在使用 ajax 時會
 
 如用 ${static_url()} 要使用 mako template 
 
+
+fix eslint
+./node_modules/.bin/fedx-scripts eslint --fix  --ext .jsx,.js openassessment/xblock/static/js/src/
+
+
+
+寫分數的考慮
+1. quick 快速設定 options 為 success, fail, bug 的 points  
+2.  在 rubric_criteria_with_labels  中，檢查如有quick 即新增 options
+3. 會準備 rubric_dict 在 create_assessment 時會將資料存入 database 並記錄 hash code (RubricIndex)
+4.  在 options selected value 對應出其中的points

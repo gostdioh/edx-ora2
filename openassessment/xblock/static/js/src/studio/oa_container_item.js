@@ -438,6 +438,7 @@ export class RubricCriterion {
     this.notifier = notifier;
     this.labelSel = $('.openassessment_criterion_label', this.element);
     this.promptSel = $('.openassessment_criterion_prompt', this.element);
+    this.quickSel =  $('.openassessment_criterion_quick', this.element);
     this.optionContainer = new Container(RubricOption, {
       containerElement: $('.openassessment_criterion_option_list', this.element).get(0),
       templateElement: $('#openassessment_option_template').get(0),
@@ -482,6 +483,7 @@ export class RubricCriterion {
     const fields = {
       label: this.label(),
       prompt: this.prompt(),
+      quick: this.quick(),
       feedback: this.feedback(),
       options: this.optionContainer.getItemValues(),
     };
@@ -525,6 +527,10 @@ export class RubricCriterion {
     return Fields.stringField(this.promptSel, prompt);
   }
 
+
+  quick(quick){
+    return Fields.stringField(this.quickSel, quick);
+  }
   /**
      Get or set the feedback value for the criterion.
      This is one of: "disabled", "optional", or "required".

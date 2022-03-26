@@ -154,6 +154,7 @@ EDITOR_UPDATE_SCHEMA = Schema({
             Required('name'): utf8_validator,
             Required('label'): utf8_validator,
             Required('prompt'): utf8_validator,
+            Optional('quick'): utf8_validator,
             Required('feedback'): All(
                 utf8_validator,
                 In([

@@ -1033,9 +1033,26 @@ class OpenAssessmentBlock(MessageMixin,
         for criterion in criteria:
             if 'label' not in criterion:
                 criterion['label'] = criterion['name']
+
+            if 'options' not in  criterion:
+                criterion['options']=[]
+
             for option in criterion['options']:
                 if 'label' not in option:
                     option['label'] = option['name']
+            if 'quick' in criterion and  criterion['quick'] != "":
+                
+                criterion['options']=[
+            {
+                'order_num': 0, 'points': 20, 'name': 'Success', 'label': 'Success',
+            },
+            {
+                'order_num': 1, 'points': 0, 'name': 'Fail', 'label': 'Fail',
+            },
+            {
+                'order_num': 2, 'points': 10, 'name': 'Bug', 'label': 'Bug',
+            }]
+
         return criteria
 
     def render_assessment(self, path, context_dict=None):
