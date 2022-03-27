@@ -280,9 +280,12 @@ class StudioMixin:
         # so we can safely modify the XBlock fields.
         self.title = data['title']
         self.display_name = data['title']
-        self.classroomURL = data['classroomURL']
-        self.imgBrokenURL = data['imgBrokenURL']
-        self.imgDoneURL = data['imgDoneURL']
+        if 'classroomURL' in data:
+            self.classroomURL = data['classroomURL']
+        if 'imgBrokenURL' in data:
+            self.imgBrokenURL = data['imgBrokenURL']
+        if 'imgDoneURL' in data:
+            self.imgDoneURL = data['imgDoneURL']
         self.prompts = data['prompts']
         self.prompts_type = data['prompts_type']
         self.rubric_criteria = data['criteria']

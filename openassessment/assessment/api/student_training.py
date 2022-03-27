@@ -174,10 +174,6 @@ def validate_training_examples(rubric, examples):
             for criterion in rubric['criteria']
         }
 
-        criteria_quick = {
-            str(criterion['name']): str(criterion['quick'])
-            for criterion in rubric['criteria']
-        }
     except (ValueError, KeyError):
         logger.warning("Could not parse serialized rubric", exc_info=True)
         return [_("Could not parse serialized rubric")]
@@ -188,7 +184,7 @@ def validate_training_examples(rubric, examples):
     criteria_without_options = [
         criterion_name
         for criterion_name, criterion_option_list in criteria_options.items()
-        if len(criterion_option_list) == 0 and criteria_quick[criterion_name] == ""
+        if len(criterion_option_list) == 0 
     ]
     if not (set(criteria_options) - set(criteria_without_options)):
         return [_(

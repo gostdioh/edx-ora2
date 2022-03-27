@@ -199,7 +199,7 @@ def validate_rubric(rubric_dict, current_rubric, is_released, _):
 
         # Some criteria may have no options, just written feedback.
         # In this case, written feedback must be required (not optional or disabled).
-        if not criterion['options'] and not criterion['quick'] and criterion.get('feedback', 'disabled') != 'required':
+        if not criterion['options'] and 'quick' not in criterion and criterion.get('feedback', 'disabled') != 'required':
             msg = _('Criteria with no options must require written feedback.')
             return False, msg
 
