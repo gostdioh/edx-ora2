@@ -1041,16 +1041,17 @@ class OpenAssessmentBlock(MessageMixin,
                 if 'label' not in option:
                     option['label'] = option['name']
             if 'quick' in criterion and  criterion['quick'] != "":
-                
+                quick_points=  criterion['quick'].split(',')
+
                 criterion['options']=[
             {
-                'order_num': 0, 'points': 20, 'name': 'Success', 'label': 'Success',
+                'order_num': 0, 'points': int(quick_points[0]), 'name': 'Success', 'label': 'Success',
             },
             {
-                'order_num': 1, 'points': 0, 'name': 'Fail', 'label': 'Fail',
+                'order_num': 1, 'points': int(quick_points[2]), 'name': 'Fail', 'label': 'Fail',
             },
             {
-                'order_num': 2, 'points': 10, 'name': 'Bug', 'label': 'Bug',
+                'order_num': 2, 'points': int(quick_points[1]), 'name': 'Bug', 'label': 'Bug',
             }]
 
         return criteria
