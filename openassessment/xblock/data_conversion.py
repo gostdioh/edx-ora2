@@ -4,6 +4,7 @@ Data Conversion utility methods for handling ORA2 XBlock data transformations an
 """
 import json
 import urllib.request
+from github import Github
 
 
 def convert_training_examples_list_to_dict(examples_list):
@@ -222,27 +223,43 @@ def create_submission_dict(submission, prompts):
         parts[0]['text'] = submission['answer'].pop('text')
         myurl =parts[0]['text']
         if myurl.startswith("https://") and "github.io" in myurl:
-            myurl =myurl+"assign1.pde"
-            response = urllib.request.urlopen(myurl)
-            data = response.read()      # a `bytes` object
-            code = data.decode('utf-8') 
-            parts[0]['code']=code
+            parts[0]['code']=getcontent(myurl)
 
     else:
         for index, part in enumerate(submission['answer'].pop('parts')):
             parts[index]['text'] = part['text']
             myurl =parts[0]['text']
             if myurl.startswith("https://") and "github.io" in myurl:
-                myurl =myurl+"assign1.pde"
-                response = urllib.request.urlopen(myurl)
-                data = response.read()      # a `bytes` object
-                code = data.decode('utf-8') 
-                parts[0]['code']=code
+                parts[0]['code']=getcontent(myurl)
 
 
     submission['answer']['parts'] = parts
 
     return submission
+
+
+def getcontent(myurl):
+    strdict=myurl.split("/")
+    userstr =""
+    repostr=""
+    code=""
+    for  i in range(len(strdict)):
+        if "github" in strdict[i]:
+            userdict = strdict[i].split(".")
+            userstr=userdict[0]
+            repostr= strdict[i+1] 
+            g = Github()
+            repo = g.get_repo(userstr+"/"+repostr)
+            contents = repo.get_contents("")
+            
+            for content_file in contents:
+                if ".pde" in content_file.name and "preload.pde" != content_file.name :
+                    #print(content_file.decoded_content)
+                    code = content_file.decoded_content.decode('utf-8')
+                    return code
+                    break
+    return ""
+
 
 
 def make_django_template_key(key):
