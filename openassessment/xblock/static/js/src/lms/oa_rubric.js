@@ -88,20 +88,24 @@ export class Rubric {
     * */
   /* eslint-disable-next-line consistent-return */
   optionsSelected(optionsSelected) {
+
+
+    
     const selector = 'input[type=radio]';
     const rubric = this;
-    const options = {};
-    $('.myclick', this.element).filter('.active').each((index,sel)=>{
-      options[rubric.getCriterionName(sel)] = sel.value;
-    })
+
+    // const options = {};
+    // $('.myclick', this.element).filter('.active').each((index,sel)=>{
+    //   options[rubric.getCriterionName(sel)] = sel.value;
+    // })
 
 
-    return options
+    // return options
 
 
 
     if (typeof optionsSelected === 'undefined') {
-      
+      const options = {};
       $(`${selector}:checked`, this.element).each(
         (index, sel) => {
           options[rubric.getCriterionName(sel)] = sel.value;
