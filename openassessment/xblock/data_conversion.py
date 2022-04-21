@@ -249,15 +249,18 @@ def getcontent(myurl):
             userstr=userdict[0]
             repostr= strdict[i+1] 
             g = Github()
-            repo = g.get_repo(userstr+"/"+repostr)
-            contents = repo.get_contents("")
-            
-            for content_file in contents:
-                if ".pde" in content_file.name and "preload.pde" != content_file.name :
-                    #print(content_file.decoded_content)
-                    code = content_file.decoded_content.decode('utf-8')
-                    return code
-                    break
+            try:
+                repo = g.get_repo(userstr+"/"+repostr)
+                contents = repo.get_contents("")
+                
+                for content_file in contents:
+                    if ".pde" in content_file.name and "preload.pde" != content_file.name :
+                        #print(content_file.decoded_content)
+                        code = content_file.decoded_content.decode('utf-8')
+                        return code
+                        break
+            except Exception:
+                return myurl +"程式載入失敗，可能是權限問題"
     return ""
 
 
