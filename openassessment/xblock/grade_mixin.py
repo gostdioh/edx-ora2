@@ -139,7 +139,7 @@ class GradeMixin:
             'score_explanation': self._get_score_explanation(workflow),
             'feedback_text': feedback_text,
             'has_submitted_feedback': has_submitted_feedback,
-            'student_submission': create_submission_dict(student_submission, self.prompts),
+            'student_submission': create_submission_dict(student_submission, self.prompts, self.accessToken),
             'peer_assessments': peer_assessments,
             'grade_details': self.grade_details(
                 submission_uuid,

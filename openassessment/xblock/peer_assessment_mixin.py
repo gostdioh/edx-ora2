@@ -238,7 +238,7 @@ class PeerAssessmentMixin:
             peer_sub = self.get_peer_submission(student_item, assessment)
             if peer_sub:
                 path = 'openassessmentblock/peer/oa_peer_turbo_mode.html'
-                context_dict["peer_submission"] = create_submission_dict(peer_sub, self.prompts)
+                context_dict["peer_submission"] = create_submission_dict(peer_sub, self.prompts, self.accessToken)
 
                 # Determine if file upload is supported for this XBlock.
                 context_dict["file_upload_type"] = self.file_upload_type
@@ -254,7 +254,7 @@ class PeerAssessmentMixin:
             peer_sub = self.get_peer_submission(student_item, assessment)
             if peer_sub:
                 path = 'openassessmentblock/peer/oa_peer_assessment.html'
-                context_dict["peer_submission"] = create_submission_dict(peer_sub, self.prompts)
+                context_dict["peer_submission"] = create_submission_dict(peer_sub, self.prompts, self.accessToken)
                 # Determine if file upload is supported for this XBlock.
                 context_dict["file_upload_type"] = self.file_upload_type
                 context_dict["peer_file_urls"] = self.get_download_urls_from_submission(peer_sub)

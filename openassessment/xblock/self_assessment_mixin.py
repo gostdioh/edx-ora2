@@ -103,7 +103,7 @@ class SelfAssessmentMixin:
             else:
                 submission = submission_api.get_submission(self.submission_uuid)
                 context["rubric_criteria"] = self.rubric_criteria_with_labels
-                context["self_submission"] = create_submission_dict(submission, self.prompts)
+                context["self_submission"] = create_submission_dict(submission, self.prompts, self.accessToken)
                 if self.rubric_feedback_prompt is not None:
                     context["rubric_feedback_prompt"] = self.rubric_feedback_prompt
 

@@ -223,6 +223,12 @@ class OpenAssessmentBlock(MessageMixin,
         help="輸入完成圖像的URL"
     )
 
+    accessToken= String(
+        default="xxxx",
+        scope=Scope.content,
+        help="Github access token"
+    )
+
 
     leaderboard_show = Integer(
         default=0,
@@ -913,7 +919,8 @@ class OpenAssessmentBlock(MessageMixin,
         block.title = config['title']
         block.classroomURL =config['classroomURL']
         block.imgBrokenURL =config['imgBrokenURL']
-        block.imgDoneURL =config['imgDoneURL']        
+        block.imgDoneURL =config['imgDoneURL']    
+        block.accessToken = config['accessToken']    
         block.prompts = config['prompts']
         block.prompts_type = config['prompts_type']
         block.text_response = config['text_response']

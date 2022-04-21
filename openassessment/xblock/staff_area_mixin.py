@@ -387,7 +387,7 @@ class StaffAreaMixin:
         user_preferences = get_user_preferences(self.runtime.service(self, 'user'))  # localize for staff user
 
         context = {
-            'submission': create_submission_dict(submission, self.prompts) if submission else None,
+            'submission': create_submission_dict(submission, self.prompts, self.accessToken) if submission else None,
             'rubric_criteria': copy.deepcopy(self.rubric_criteria_with_labels),
             'student_username': student_username,
             'user_timezone': user_preferences['user_timezone'],

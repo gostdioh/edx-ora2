@@ -240,6 +240,7 @@ export class StudioView {
       classroomURL: this.settingsView.classroomURL(),
       imgBrokenURL: this.settingsView.imgBrokenURL(),
       imgDoneURL: this.settingsView.imgDoneURL(),
+      accessToken: this.settingsView.accessToken(),
       submissionStart: this.scheduleView.submissionStart(),
       submissionDue: this.scheduleView.submissionDue(),
       assessments: this.assessmentsStepsView.assessmentsDescription(),

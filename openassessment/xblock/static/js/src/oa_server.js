@@ -460,6 +460,7 @@ export class Server {
       classroomURL: options.classroomURL,
       imgBrokenURL: options.imgBrokenURL,
       imgDoneURL: options.imgDoneURL,
+      accessToken: options.accessToken,
       submission_start: options.submissionStart,
       submission_due: options.submissionDue,
       criteria: options.criteria,

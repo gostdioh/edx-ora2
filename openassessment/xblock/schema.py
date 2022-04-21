@@ -106,6 +106,7 @@ EDITOR_UPDATE_SCHEMA = Schema({
     Optional('classroomURL'): utf8_validator,
     Optional('imgBrokenURL'): utf8_validator,
     Optional('imgDoneURL'): utf8_validator,
+    Optional('accessToken'): utf8_validator,
     Required('feedback_prompt'): utf8_validator,
     Required('feedback_default_text'): utf8_validator,
     Required('submission_start'): Any(datetime_validator, None),

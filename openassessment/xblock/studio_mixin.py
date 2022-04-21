@@ -169,6 +169,7 @@ class StudioMixin:
             'classroomURL': self.classroomURL,
             'imgBrokenURL': self.imgBrokenURL,
             'imgDoneURL': self.imgDoneURL,
+            'accessToken': self.accessToken,
             'submission_due': submission_due,
             'submission_start': submission_start,
             'assessments': assessments,
@@ -284,6 +285,8 @@ class StudioMixin:
             self.imgBrokenURL = data['imgBrokenURL']
         if 'imgDoneURL' in data:
             self.imgDoneURL = data['imgDoneURL']
+        if 'accessToken' in data:
+            self.accessToken = data['accessToken']
         self.prompts = data['prompts']
         self.prompts_type = data['prompts_type']
         self.rubric_criteria = data['criteria']

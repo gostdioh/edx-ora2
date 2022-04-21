@@ -863,6 +863,7 @@ class SubmissionMixin:
             'classroomURL': self.classroomURL,
             'imgBrokenURL': self.imgBrokenURL,
             'imgDoneURL': self.imgDoneURL,
+            'accessToken': self.accessToken,
             'file_upload_response': self.file_upload_response,
             'has_real_user': self.has_real_user,
             'prompts_type': self.prompts_type,
@@ -937,7 +938,7 @@ class SubmissionMixin:
                     },
                 }
 
-            context['saved_response'] = create_submission_dict(saved_response, self.prompts)
+            context['saved_response'] = create_submission_dict(saved_response, self.prompts, self.accessToken)
             context['save_status'] = self.save_status
             context['enable_delete_files'] = True
 
@@ -972,7 +973,7 @@ class SubmissionMixin:
             student_submission = self.get_user_submission(
                 workflow["submission_uuid"]
             )
-            context["student_submission"] = create_submission_dict(student_submission, self.prompts)
+            context["student_submission"] = create_submission_dict(student_submission, self.prompts, self.accessToken)
             path = 'openassessmentblock/response/oa_response_graded.html'
         else:
             student_submission = self.get_user_submission(
@@ -982,7 +983,7 @@ class SubmissionMixin:
             self_in_workflow = "self" in workflow["status_details"]
             context["peer_incomplete"] = peer_in_workflow and not workflow["status_details"]["peer"]["complete"]
             context["self_incomplete"] = self_in_workflow and not workflow["status_details"]["self"]["complete"]
-            context["student_submission"] = create_submission_dict(student_submission, self.prompts)
+            context["student_submission"] = create_submission_dict(student_submission, self.prompts, self.accessToken)
             path = 'openassessmentblock/response/oa_response_submitted.html'
 
         return path, context

@@ -205,7 +205,7 @@ def prepare_submission_for_serialization(submission_data):
     }
 
 
-def create_submission_dict(submission, prompts):
+def create_submission_dict(submission, prompts,accessToken =""):
     """
     1. Convert from legacy format.
     2. Add prompts to submission['answer']['parts'] to simplify iteration in the template.
@@ -223,14 +223,14 @@ def create_submission_dict(submission, prompts):
         parts[0]['text'] = submission['answer'].pop('text')
         myurl =parts[0]['text']
         if myurl.startswith("https://") and "github.io" in myurl:
-            parts[0]['code']=getcontent(myurl)
+            parts[0]['code']=getcontent(myurl, accessToken)
 
     else:
         for index, part in enumerate(submission['answer'].pop('parts')):
             parts[index]['text'] = part['text']
             myurl =parts[0]['text']
             if myurl.startswith("https://") and "github.io" in myurl:
-                parts[0]['code']=getcontent(myurl)
+                parts[0]['code']=getcontent(myurl, accessToken)
 
 
     submission['answer']['parts'] = parts
@@ -238,7 +238,7 @@ def create_submission_dict(submission, prompts):
     return submission
 
 
-def getcontent(myurl):
+def getcontent(myurl, accessToken):
     strdict=myurl.split("/")
     userstr =""
     repostr=""
@@ -247,8 +247,11 @@ def getcontent(myurl):
         if "github" in strdict[i]:
             userdict = strdict[i].split(".")
             userstr=userdict[0]
-            repostr= strdict[i+1] 
+            repostr= strdict[i+1]
             g = Github()
+            if len(accessToken) >4 :
+                g = Github(userstr,accessToken )
+            
             try:
                 repo = g.get_repo(userstr+"/"+repostr)
                 contents = repo.get_contents("")

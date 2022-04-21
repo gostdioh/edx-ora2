@@ -102,7 +102,7 @@ class LeaderboardMixin:
                     )
             if 'text' in score['content'] or 'parts' in score['content']:
                 submission = {'answer': score.pop('content')}
-                score['submission'] = create_submission_dict(submission, self.prompts)
+                score['submission'] = create_submission_dict(submission, self.prompts, self.accessToken)
             elif isinstance(score['content'], str):
                 pass
             # Currently, we do not handle non-text submissions.

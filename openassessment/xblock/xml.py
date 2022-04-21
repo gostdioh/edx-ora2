@@ -765,6 +765,9 @@ def serialize_content_to_xml(oa_block, root):
         root.set('imgBrokenURL',str(oa_block.imgBrokenURL))
     if oa_block.imgDoneURL:
         root.set('imgDoneURL',str(oa_block.imgDoneURL))
+    if oa_block.accessToken:
+        root.set('accessToken',str(oa_block.accessToken))
+    
     
 
 
@@ -959,6 +962,12 @@ def parse_from_xml(root):
     if imgDoneURL_el is not None:
         imgDoneURL = _safe_get_text(imgDoneURL_el)
 
+    accessToken=""
+    accessToken_el = root.find('accessToken')
+    if accessToken_el is not None:
+        accessToken = _safe_get_text(accessToken_el)
+
+
 
     # Retrieve the rubric
     rubric_el = root.find('rubric')
@@ -999,7 +1008,8 @@ def parse_from_xml(root):
         'title': title,
         'classroomURL':classroomURL,
         'imgBrokenURL':imgBrokenURL,
-        'imgDoneURL':imgDoneURL,        
+        'imgDoneURL':imgDoneURL, 
+        'accessToken': accessToken,       
         'prompts': prompts,
         'prompts_type': prompts_type,
         'rubric_criteria': rubric['criteria'],

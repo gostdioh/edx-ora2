@@ -32,6 +32,7 @@ export class EditSettingsView {
     this.classroomURL = this.classroomURL.bind(this);
     this.imgBrokenURL = this.imgBrokenURL.bind(this);
     this.imgDoneURL = this.imgDoneURL.bind(this);
+    this.accessToken = this.accessToken.bind(this);
     this.textResponseNecessity = this.textResponseNecessity.bind(this);
     this.textResponseEditor = this.textResponseEditor.bind(this);
     this.fileUploadResponseNecessity = this.fileUploadResponseNecessity.bind(this);
@@ -223,6 +224,12 @@ export class EditSettingsView {
 
   imgDoneURL(name) {
     const sel = $('#openassessment_imgDoneURL_editor', this.settingsElement);
+    return Fields.stringField(sel, name);
+  }
+
+
+  accessToken(name) {
+    const sel = $('#openassessment_accessToken_editor', this.settingsElement);
     return Fields.stringField(sel, name);
   }
 
